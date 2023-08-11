@@ -1,0 +1,100 @@
+.about {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: radial-gradient(at left top, #2373ce, #8e9eed, #2373ce);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+.card > img {
+  margin: 30px;
+}
+
+.title > h2 {
+  color: #ffffffde;
+  font-size: 5rem;
+  font-family: monospace;
+}
+
+h2 > span {
+  color: #0d6efd6e;
+}
+
+.cards {
+  animation: revealAnimation 1s forwards;
+}
+
+/* WIE */
+.WIE {
+  display: flex;
+  font-family: monospace;
+  flex-direction: column;
+  align-items: center;
+}
+.WIE_MAIN {
+  background-size: 400% 400% !important;
+  padding: 5rem 0 0.1rem 0;
+  background: linear-gradient(-45deg, #99057b, #292975, #760599, #057b99);
+  animation: gradient 5s ease infinite;
+}
+.wie_photo > img {
+  width: 100%;
+  border-radius: 5rem;
+}
+.wie_title {
+  color: #fff;
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Borel", cursive;
+}
+
+.wie_desc,
+.wie_media,
+.about_footer {
+  text-align: justify;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.about_footer {
+  font-family: monospace;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about {
+    padding-top: 10rem;
+  }
+  .card {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .WIE {
+    flex-direction: row;
+  }
+  .wie_content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wie_photo > img,
+  .wie_title {
+    width: 70%;
+    border-radius: 4rem;
+  }
+
+  .wie_photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
