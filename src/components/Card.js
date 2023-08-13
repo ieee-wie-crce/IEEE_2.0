@@ -14,7 +14,7 @@ function Card(props) {
               alt=""
               className="mb-5 img-fluid"
             />
-            <h3>{props.title}</h3>
+            <h3 className="text-center">{props.title}</h3>
             {props.position && <p>{props.position}</p>}
           </div>
 

@@ -23,6 +23,14 @@
   text-decoration: none;
   color: #000;
 }
+.IEEE > img{
+  width: 4em;
+  pointer-events: none;
+}
+.WIE > img{
+  width: 3em;
+  pointer-events: none;
+}
 .is-active,
 .teamLink:hover {
   background: rgba(227, 242, 253, 0.35);
@@ -90,7 +98,7 @@
   font-size: 1rem;
 }
 /* FOR Tablets */
-@media only screen and (max-width: 768px) and (min-width: 414px) {
+@media only screen and (max-width: 768px) and (min-width: 420px) {
   .tiltDiv {
     width: 40%;
   }

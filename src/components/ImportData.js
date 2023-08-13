@@ -7,6 +7,7 @@ import shivprasad from "../assets/TeamMembers/IEEE/shivprasad.png";
 import aryan from "../assets/TeamMembers/IEEE/aryan.png";
 import prashant from "../assets/TeamMembers/IEEE/prashant.png";
 import mohtashim from "../assets/TeamMembers/IEEE/mohtashim.png";
+import vedant from "../assets/TeamMembers/IEEE/vedant.png";
 import jerry from "../assets/TeamMembers/IEEE/jerry.png";
 import janhavi from "../assets/TeamMembers/IEEE/janhavi.png";
 import adarsh from "../assets/TeamMembers/IEEE/adarsh.png";
@@ -40,6 +41,7 @@ const IEEEmembers = [
   aryan,
   prashant,
   mohtashim,
+  vedant,
   jerry,
   janhavi,
   adarsh,

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import Tilt from "react-parallax-tilt";
+import ieeeIcon from "../assets/logos/ieeeIcon.svg";
+import wieIcon from "../assets/logos/wieIcon.svg";
 import "../components/Team.css";
 import { IEEEmembers, WIEmembers } from "./ImportData"; // Import arrays of IEEE and WIE team members
 import placeholderImg from "../assets/placeholders/download.png"; // Placeholder image for unloaded images
@@ -35,8 +37,7 @@ function Team() {
     (member) => member.team === teamCardsCondition
   );
 
-  const ShowSocialLinks=()=>{
-  }
+  const ShowSocialLinks = () => {};
   return (
     <>
       <div className="team">
@@ -51,13 +52,13 @@ function Team() {
               className="teamLink IEEE is-active"
               onClick={handleTeamTabBtn}
             >
-              TEAM IEEE
+              <img src={ieeeIcon} alt="ieeeIcon"/>
             </Link>
           </div>
           <div className="title">
             {/* Handle click on WIE team tab */}
             <Link className="teamLink WIE" onClick={handleTeamTabBtn}>
-              TEAM WIE
+            <img src={wieIcon} alt="ieeeIcon"/>
             </Link>
           </div>
         </div>
@@ -82,6 +83,7 @@ function Team() {
                             : WIEmembers[index]
                           : placeholderImg
                       }
+                      loading="lazy"
                       alt={member.name.toUpperCase()}
                       className="img-fluid w-100"
                     />
@@ -95,7 +97,7 @@ function Team() {
                     <div className="socialIcons">
                       {member.instagramId && (
                         <a
-                        className="socialIcon instagram"
+                          className="socialIcon instagram"
                           href={`https://www.instagram.com/${member.instagramId}`}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -103,12 +105,15 @@ function Team() {
                           <Icon icon="bi:instagram" />
                         </a>
                       )}
-                      <div className="showSocialLinksBtn" onClick={ShowSocialLinks}>
+                      <div
+                        className="showSocialLinksBtn"
+                        onClick={ShowSocialLinks}
+                      >
                         <Icon icon="tabler:social" />
                       </div>
                       {member.linkedin && (
                         <a
-                        className="socialIcon linkedin"
+                          className="socialIcon linkedin"
                           href={`https://www.linkedin.com/in/${member.linkedin}`}
                           target="_blank"
                           rel="noopener noreferrer"

@@ -36,6 +36,7 @@ h2 > span {
   align-items: center;
 }
 .WIE_MAIN {
+  min-height: 100vh;
   background-size: 400% 400% !important;
   padding: 5rem 0 0.1rem 0;
   background: linear-gradient(-45deg, #99057b, #292975, #760599, #057b99);
