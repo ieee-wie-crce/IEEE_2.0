@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/js/0.530f0b52.chunk.js"
   },
   {
-    "revision": "a841be0dd5f01c0cf193",
+    "revision": "09da7e4bfaac27460f37",
     "url": "/static/css/main.b0f55be3.chunk.css"
   },
   {
-    "revision": "a841be0dd5f01c0cf193",
-    "url": "/static/js/main.a841be0d.chunk.js"
+    "revision": "09da7e4bfaac27460f37",
+    "url": "/static/js/main.09da7e4b.chunk.js"
   },
   {
     "revision": "cb0ac8cfd220afbdaa6b",
@@ -220,7 +220,7 @@ self.__precacheManifest = [
     "url": "/static/media/mokshada.34ae74f7.png"
   },
   {
-    "revision": "926ce03adb9db0f4a5a57b36ace39317",
+    "revision": "9933eb2800ea51fe44e807fe51eb7533",
     "url": "/index.html"
   }
 ];
