@@ -31,11 +31,9 @@ function Navbar() {
       { to: "/team", icon: "fluent:people-team-16-regular", text: "Team" },
     ];
   }, []);
-  console.log(process.env);
   const handleSubmit = (e) => {
     let sendBtn = e.target[4];
     e.preventDefault();
-    console.log(e.target);
     sendBtn.innerText = "Sending..";
     emailjs
       .sendForm(
