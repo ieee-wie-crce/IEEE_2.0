@@ -1,15 +1,18 @@
 import React from "react";
-import errorImg from "../assets/Error404.jpg";
+import { Link } from "react-router-dom";
+import { Icon } from "@iconify/react";
 export default function Error() {
-  const errorStyle = {
-    width: "100vw",
-    height: "100vh",
-    objectFit: "contain",
-    backgroundColor: "#fffff",
-  };
   return (
     <>
-      <img src={errorImg} style={errorStyle} alt="Under Construction" />
+      <div className="container vh-100 d-flex justify-content-center align-items-center flex-column">
+        <Icon icon="tabler:error-404" className="mb-5" width={100} />
+        <p>
+          <Link to="/">
+            {" "}
+            Go Back To Our Website <Icon icon="mingcute:back-line" />
+          </Link>
+        </p>
+      </div>
     </>
   );
 }

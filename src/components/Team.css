@@ -23,11 +23,11 @@
   text-decoration: none;
   color: #000;
 }
-.IEEE > img{
+.IEEE > img {
   width: 4em;
   pointer-events: none;
 }
-.WIE > img{
+.WIE > img {
   width: 3em;
   pointer-events: none;
 }

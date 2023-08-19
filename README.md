@@ -8,7 +8,7 @@ IEEE is the world's largest technical professional organization dedicated to adv
 
 ## About WIE 🌟👩‍🔬
 
-WIE is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, as well as inspiring girls around the world to follow their academic interests in a career in engineering and science. Our WIE chapter at [Your University Name] empowers and supports women in engineering through various initiatives, events, and mentorship programs.
+WIE is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, as well as inspiring girls around the world to follow their academic interests in a career in engineering and science. Our WIE chapter at FR.CRCE empowers and supports women in engineering through various initiatives, events, and mentorship programs.
 
 ## Features 🚀📅
 

@@ -4,213 +4,246 @@
     "position": "IEEE CHAIRPERSON",
     "team": "IEEE",
     "linkedin": "rachanarchavan",
-    "instagramId": "rachana_432"
+    "instagramId": "rachana_432",
+    "icon": "game-icons:rank-3"
   },
   {
     "name": "Santo Sunny",
     "position": "SECRETARY",
     "team": "IEEE",
     "linkedin": "santo-sunny-6553971ba",
-    "instagramId": "cr_stark_08"
+    "instagramId": "cr_stark_08",
+    "icon": "game-icons:rank-2"
   },
   {
     "name": "BHAVIKA SALVI",
     "position": "TRESURER",
     "team": "IEEE",
-    "linkedin": "bhavika-salvi"
+    "linkedin": "bhavika-salvi",
+    "icon": "game-icons:rank-1"
   },
   {
     "name": "Aditya Dhikale",
     "position": "VICE CHAIRPERSON",
     "team": "IEEE",
     "linkedin": "aditya-dhikale-a7276a238",
-    "instagramId": "adityadhikale2003"
+    "instagramId": "adityadhikale2003",
+    "icon": "mdi:account-tie-outline"
   },
   {
     "name": "Shivprasad Chavarattil",
     "position": "VICE CHAIRPERSON",
     "team": "IEEE",
     "linkedin": "shivprasad-premarajan-b4659b1ab",
-    "instagramId": "shivprasadcp"
+    "instagramId": "shivprasadcp",
+    "icon": "mdi:account-tie-outline"
   },
   {
     "name": "Aryan Mohite",
     "position": "CO. ORGANISER",
     "team": "IEEE",
     "linkedin": "aryanmohite",
-    "instagramId": "aryanmohitee"
+    "instagramId": "aryanmohitee",
+    "icon": "octicon:workflow-16"
   },
   {
     "name": "Prashant Singh",
     "position": "SR. TECHNICAL HEAD",
     "team": "IEEE",
     "linkedin": "prashant-singh-734bb3262",
-    "instagramId": "prashh_314"
+    "instagramId": "prashh_314",
+    "icon": "game-icons:techno-heart"
   },
   {
     "name": "Mohtashim Ali",
     "position": "SR. PR HEAD",
     "team": "IEEE",
     "linkedin": "mohtashim-ali-syed-2ab202252",
-    "instagramId": "mohtashim__ali"
+    "instagramId": "mohtashim__ali",
+    "icon": "icon-park-outline:connect"
   },
   {
     "name": "Vedant Chawardol",
     "position": "Sr. Marketing Head",
     "team": "IEEE",
     "linkedin": "vedant-chawardol",
-    "instagramId": "iam.vedant"
+    "instagramId": "iam.vedant",
+    "icon": "nimbus:marketing"
   },
   {
     "name": "Jerry Jacob",
     "position": "SR. Documentation HEAD",
     "team": "IEEE",
     "linkedin": "jerry-jacob-34a44a229",
-    "instagramId": "jerryjaob09"
+    "instagramId": "jerryjaob09",
+    "icon": "carbon:document-view"
   },
   {
     "name": "Janhavi Singh",
     "position": "SE REPRESENTATIVE",
     "team": "IEEE",
     "linkedin": "janhavi-singh-6a1897282",
-    "instagramId": "janhaavvi"
+    "instagramId": "janhaavvi",
+    "icon": "bi:person-badge"
   },
   {
     "name": "Adarsh Gupta",
     "position": "JR. TECHNICAL HEAD",
     "team": "IEEE",
     "linkedin": "adarsh-gupta-650a09264",
-    "instagramId": "adarsh_gupta173"
+    "instagramId": "adarsh_gupta173",
+    "icon": "bi:code-slash"
   },
   {
     "name": "Samrudhi Shetty",
     "position": "JR DESIGN HEAD",
     "team": "IEEE",
     "linkedin": "samrudhi-shetty-5a227b264",
-    "instagramId": "_samrudhishetty_"
+    "instagramId": "_samrudhishetty_",
+    "icon": "streamline:interface-align-layers-2-design-layer-layers-pile-stack"
   },
   {
     "name": "Wasee Momin",
     "position": "JR. design head",
     "team": "IEEE",
     "linkedin": "wasee-momin-51b903282",
-    "instagramId": "_w4see_"
+    "instagramId": "_w4see_",
+    "icon": "iconoir:design-pencil"
   },
   {
     "name": "Mrunali Tamhankar",
     "position": "JR. PR head",
     "team": "IEEE",
     "linkedin": "mrunali-tamhankar-25050026b",
-    "instagramId": "mrunoly"
+    "instagramId": "mrunoly",
+    "icon": "carbon:chart-relationship"
   },
   {
     "name": "Keenan Mendas",
     "position": "JR. Marketing head",
     "team": "IEEE",
     "linkedin": "keenan-mendes-21b637282",
-    "instagramId": "keen_n02"
+    "instagramId": "keen_n02",
+    "icon": "fluent-mdl2:market"
   },
   {
     "name": "Shine Mascarenhas",
     "position": "JR. Documentation head",
     "team": "IEEE",
     "linkedin": "shine-mascarenhas-046244269",
-    "instagramId": "shine_mascarenhas_"
+    "instagramId": "shine_mascarenhas_",
+    "icon": "solar:document-broken"
   },
   {
     "name": "Grace Pereira",
     "position": "The Chairperson",
     "team": "WIE",
     "linkedin": "grace-pereira-735993230",
-    "instagramId": "_gracepereira"
+    "instagramId": "_gracepereira",
+    "icon": "game-icons:rank-3"
   },
   {
     "name": "Sanika Rozario",
     "position": "Vice Chairperson",
     "team": "WIE",
     "linkedin": "sanika-rozario-97894522b",
-    "instagramId": "rozariosanika"
+    "instagramId": "rozariosanika",
+    "icon": "game-icons:rank-2"
   },
   {
     "name": "Pearl D'Souza",
     "position": "TRESURER",
     "team": "WIE",
     "linkedin": "pearl-dsouza-82b8b6231",
-    "instagramId": "_ft.pearl_"
+    "instagramId": "_ft.pearl_",
+    "icon": "game-icons:rank-1"
   },
   {
     "name": "Sania Almedia",
     "position": "Event Coordinator",
     "team": "WIE",
     "linkedin": "sania-almeida-17b5b2249",
-    "instagramId": "almeida.sania.18"
+    "instagramId": "almeida.sania.18",
+    "icon": "carbon:event"
   },
   {
     "name": "Sharli Khot",
     "position": "Documentation head",
     "team": "WIE",
     "linkedin": "sharlikhot",
-    "instagramId": "sharli.khot"
+    "instagramId": "sharli.khot",
+    "icon": "solar:document-add-broken"
   },
   {
     "name": "Amanda Saldanha",
     "position": "Design Head",
     "team": "WIE",
     "linkedin": "sania-almeida-17b5b2249",
-    "instagramId": "almeida.sania.18"
+    "instagramId": "almeida.sania.18",
+    "icon": "ic:outline-design-services"
   },
   {
     "name": "Anwaya Belwalkar",
     "position": "Technical Head",
     "team": "WIE",
     "linkedin": "anwaya-belwalkar-46a472230",
-    "instagramId": "anwayaaa"
+    "instagramId": "anwayaaa",
+    "icon": "grommet-icons:technology"
   },
   {
     "name": "Kashmira Sukhtankar",
     "position": "PR Head",
-    "team": "WIE"
+    "team": "WIE",
+    "linkedin": "kashmira-sukhtankar-00558b24b",
+    "instagramId": "kash_2501",
+    "icon": "game-icons:relationship-bounds"
   },
   {
     "name": "Nivedita Kokane",
     "position": "Marketing Head",
     "team": "WIE",
     "linkedin": "nivedita-kokane-471130249",
-    "instagramId": "kokanenivedita"
+    "instagramId": "kokanenivedita",
+    "icon": "icon-park-outline:stock-market"
   },
   {
     "name": "Gayatri Nadar",
     "position": "JR. TECHNICAL HEAD",
     "team": "WIE",
     "linkedin": "gayatri-nadar-570b76264",
-    "instagramId": "grn__idk"
+    "instagramId": "grn__idk",
+    "icon": "icon-park-outline:code-computer"
   },
   {
     "name": "Mohika Rane",
     "position": "JR DESIGN HEAD",
     "team": "WIE",
     "linkedin": "mohika-rane-1b0503259",
-    "instagramId": "ranemohika"
+    "instagramId": "ranemohika",
+    "icon": "clarity:design-line"
   },
   {
     "name": "Raina Joyce Raj",
     "position": "JR. Documentation head",
     "team": "WIE",
     "linkedin": "raina-joyce-b92a1a249",
-    "instagramId": "raina_joyce7"
+    "instagramId": "raina_joyce7",
+    "icon": "pajamas:doc-code"
   },
   {
     "name": "Janice Almeida",
     "position": "JR. PR head",
     "team": "WIE",
     "linkedin": "janice-almeida-8392b8282",
-    "instagramId": "janice_almeida14_"
+    "instagramId": "janice_almeida14_",
+    "icon": "tabler:circles-relation"
   },
   {
     "name": "Mokshada Rane",
     "position": "SE REPRESENTATIVE",
     "team": "WIE",
     "linkedin": "mokshada-rane-b26394259",
-    "instagramId": "mokshadarane"
+    "instagramId": "mokshadarane",
+    "icon": "fluent:person-ribbon-20-regular"
   }
 ]

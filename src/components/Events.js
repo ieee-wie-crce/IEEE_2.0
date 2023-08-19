@@ -89,10 +89,14 @@ function Events() {
                         src={eventImgLoaded ? info.imageUrl : eventPlaceholder}
                         alt={info.name}
                         className="img-fluid rounded w-100"
+                        loading="lazy"
                       />
                     </div>
                     {/* Event description */}
-                    <div className="eventContent p-1">{info.description}</div>
+                    <div className="eventContent p-1">
+                      <Icon icon="mdi:resource-description-framework" />{" "}
+                      {info.description}
+                    </div>
                   </div>
                 </div>
                 {/* Hidden image to trigger image load event */}

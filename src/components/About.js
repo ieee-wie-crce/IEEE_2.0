@@ -134,10 +134,10 @@ const About = () => {
               Leveraging Technology for a Better Tomorrow.
             </div>
             <div className="footer_desc">
-              IEEE-CRCE Council organizes acitivites like technical quiz,
-              workshops, session, competitions and debates. It help the students
-              to become acquainted with the industry which is not provided by
-              the university syllabus.
+              IEEE-WIE-CRCE Council organizes acitivites like technical quiz,
+              workshops, session, competitions and debates. It helps the
+              students to become acquainted with the industry which is not
+              provided by the university syllabus.
             </div>
           </div>
         </div>

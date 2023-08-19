@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import backgroundPlaceholder from "../assets/placeholders/ieee-placeholder.png";
 import background from "../assets/ieeeTeam.jpg";
+import { Icon } from "@iconify/react";
 import "../components/Hero.css";
 // Hero component
 function Hero() {
@@ -10,20 +11,18 @@ function Hero() {
   const handleImageLoad = () => {
     setImageLoaded(true);
   };
+  const heroBackgroundStyle = {
+      background: `url(${
+        imageLoaded ? background : backgroundPlaceholder
+      }) center center/cover no-repeat`,
+  };
   return (
     <>
       {/* Hero container */}
-      <div
-        className="heroContainer px-5"
-        style={{
-          background: `url(${
-            imageLoaded ? background : backgroundPlaceholder
-          }) center center/cover no-repeat`,
-        }}
-      >
+      <div className="heroContainer px-5" style={heroBackgroundStyle}>
         <span className="reveal-text">
           {/* Main heading */}
-          <h1>
+          <h1 className="mainHeading">
             I<span className="ieee-span">EEE</span>
           </h1>
           {/* Sub heading */}
@@ -32,7 +31,7 @@ function Hero() {
         {/* Content with typing animation */}
         <div className="content">
           <div>
-            {/* Typing animation */}
+            <Icon icon="iconamoon:send" /> {/* Typing animation */}
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially

@@ -7,7 +7,6 @@ const Hero = React.lazy(() => import("./components/Hero"));
 const About = React.lazy(() => import("./components/About"));
 const Events = React.lazy(() => import("./components/Events"));
 const Team = React.lazy(() => import("./components/Team"));
-const Contact = React.lazy(() => import("./components/Contact"));
 const Error = React.lazy(() => import("./components/Error"));
 function App() {
   return (
@@ -34,7 +33,6 @@ function App() {
             <Route path="/about" exact Component={About} />
             <Route path="/events" exact Component={Events} />
             <Route path="/team" exact Component={Team} />
-            <Route path="/contact" exact Component={Contact} />
             <Route path="*" Component={Error} />
           </Routes>
         </Suspense>

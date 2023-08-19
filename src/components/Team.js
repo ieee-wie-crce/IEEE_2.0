@@ -52,13 +52,13 @@ function Team() {
               className="teamLink IEEE is-active"
               onClick={handleTeamTabBtn}
             >
-              <img src={ieeeIcon} alt="ieeeIcon"/>
+              <img src={ieeeIcon} alt="ieeeIcon" />
             </Link>
           </div>
           <div className="title">
             {/* Handle click on WIE team tab */}
             <Link className="teamLink WIE" onClick={handleTeamTabBtn}>
-            <img src={wieIcon} alt="ieeeIcon"/>
+              <img src={wieIcon} alt="ieeeIcon" />
             </Link>
           </div>
         </div>
@@ -90,6 +90,7 @@ function Team() {
                   </div>
                   {/* Display team member information */}
                   <div className="info rounded">
+                    <Icon icon={member.icon} width={50} />
                     <h3>{member.name.toUpperCase()}</h3>
                     <p className="positionName">
                       {member.position.toUpperCase()}

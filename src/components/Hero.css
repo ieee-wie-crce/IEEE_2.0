@@ -16,7 +16,7 @@
 }
 
 .content {
-display: block;
+  display: block;
   text-align: justify;
   padding: 1rem 2rem;
   color: #fff;
@@ -30,7 +30,6 @@ display: block;
   margin: 1rem;
 }
 
-
 .heroContainer:last-child {
   align-items: center;
 }
@@ -42,12 +41,12 @@ video {
   z-index: -1;
 }
 
-h1 {
+.mainHeading {
   font-size: 150px;
   color: #d0d8e4f0;
 }
 
-h1 ~ p {
+.mainHeading ~ p {
   font-size: 40px;
   color: #d0d8e4f0;
 }
@@ -61,7 +60,7 @@ section {
   min-height: 100vh;
 }
 @media only screen and (max-width: 768px) {
-  h1 {
+  .mainHeading {
     font-size: 80px;
   }
   p {
@@ -69,5 +68,6 @@ section {
   }
   .heroContainer {
     align-items: center;
+    
   }
 }
