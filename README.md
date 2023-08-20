@@ -4,7 +4,7 @@ Welcome to the official website of IEEE (Institute of Electrical and Electronics
 
 ## About IEEE 🌐🔬
 
-IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity. Our IEEE student branch at [Your University Name] is committed to fostering technological innovation, knowledge sharing, and professional development among students interested in various engineering disciplines.
+IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity. Our IEEE student branch at FR.CRCE is committed to fostering technological innovation, knowledge sharing, and professional development among students interested in various engineering disciplines.
 
 ## About WIE 🌟👩‍🔬
 
