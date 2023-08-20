@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
 import { TailSpin } from "react-loader-spinner";
+import "./App.css";
 const Hero = React.lazy(() => import("./components/Hero"));
 const About = React.lazy(() => import("./components/About"));
 const Events = React.lazy(() => import("./components/Events"));

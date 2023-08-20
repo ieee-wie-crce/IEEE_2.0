@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Icon } from "@iconify/react";
-import Tilt from "react-parallax-tilt";
 import ieeeIcon from "../assets/logos/ieeeIcon.svg";
 import wieIcon from "../assets/logos/wieIcon.svg";
-import "../components/Team.css";
+import "./Team.css";
 import { IEEEmembers, WIEmembers } from "./ImportData"; // Import arrays of IEEE and WIE team members
 import placeholderImg from "../assets/placeholders/download.png"; // Placeholder image for unloaded images
 import teamMembers from "../data/TeamData.json"; // Import data containing team member information
-
+const TeamMember = React.lazy(() => import("./TeamMember"));
 function Team() {
   // Set the document title
   document.title = "IEEE & WIE TEAM";
@@ -65,79 +63,18 @@ function Team() {
         {/* Display team members */}
         <div className="teamMembers">
           {filteredCards.map((member, index) => (
-            <Tilt
-              className={`tiltDiv card-${index}`}
+            <TeamMember
               key={index}
-              tiltReverse={true}
-              scale={1.1}
-            >
-              <div className="teamMemberCard">
-                <div className="teamMember">
-                  {/* Display team member image */}
-                  <div className="imgDiv">
-                    <img
-                      src={
-                        imageLoaded
-                          ? teamCardsCondition === "IEEE"
-                            ? IEEEmembers[index]
-                            : WIEmembers[index]
-                          : placeholderImg
-                      }
-                      loading="lazy"
-                      alt={member.name.toUpperCase()}
-                      className="img-fluid w-100"
-                    />
-                  </div>
-                  {/* Display team member information */}
-                  <div className="info rounded">
-                    <Icon icon={member.icon} width={50} />
-                    <h3>{member.name.toUpperCase()}</h3>
-                    <p className="positionName">
-                      {member.position.toUpperCase()}
-                    </p>
-                    <div className="socialIcons">
-                      {member.instagramId && (
-                        <a
-                          className="socialIcon instagram"
-                          href={`https://www.instagram.com/${member.instagramId}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <Icon icon="bi:instagram" />
-                        </a>
-                      )}
-                      <div
-                        className="showSocialLinksBtn"
-                        onClick={ShowSocialLinks}
-                      >
-                        <Icon icon="tabler:social" />
-                      </div>
-                      {member.linkedin && (
-                        <a
-                          className="socialIcon linkedin"
-                          href={`https://www.linkedin.com/in/${member.linkedin}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <Icon icon="bi:linkedin" />
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Hidden image element to trigger image load event */}
-              <img
-                src={
-                  teamCardsCondition === "IEEE"
-                    ? IEEEmembers[index]
-                    : WIEmembers[index]
-                }
-                alt="Member Background"
-                onLoad={handleImageLoad}
-                style={{ display: "none" }} // Hide the image element
-              />
-            </Tilt>
+              member={member}
+              index={index}
+              imageLoaded={imageLoaded}
+              teamCardsCondition={teamCardsCondition}
+              placeholderImg={placeholderImg}
+              IEEEmembers={IEEEmembers}
+              WIEmembers={WIEmembers}
+              ShowSocialLinks={ShowSocialLinks}
+              handleImageLoad={handleImageLoad}
+            />
           ))}
         </div>
       </div>
