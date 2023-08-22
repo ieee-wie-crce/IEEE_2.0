@@ -46,28 +46,17 @@ function Events() {
   return (
     <div className="events">
       {/* Event title and navigation */}
-      <div className="eventTitle">
-        I<span style={{ color: "#7ca2e3" }}>EEE</span> - Events
-      </div>
+      <div className="eventTitle">Events</div>
       <div className="border" />
       <div className="navigation d-flex justify-content-center container">
         <Link className="tab all is-active" onClick={handleActive}>
-          <Icon
-            icon="material-symbols:select-all-rounded"
-            style={{ pointerEvents: "none" }}
-          />{" "}
-          All
+          <Icon icon="material-symbols:select-all-rounded" /> All
         </Link>
         <Link className="tab upcoming" onClick={handleActive}>
-          <Icon
-            icon="material-symbols:upcoming-outline"
-            style={{ pointerEvents: "none" }}
-          />{" "}
-          Upcoming
+          <Icon icon="material-symbols:upcoming-outline" /> Upcoming
         </Link>
         <Link className="tab wie" onClick={handleActive}>
-          <Icon icon="solar:women-broken" style={{ pointerEvents: "none" }} />{" "}
-          WIE
+          <Icon icon="solar:women-broken" /> WIE
         </Link>
       </div>
       {/* Event cards */}

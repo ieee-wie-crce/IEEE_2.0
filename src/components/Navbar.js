@@ -10,15 +10,17 @@ function Navbar() {
   // Memoized handleToggle function
   const handleToggle = () => {
     if (window.innerWidth <= 768) {
-      let toggle = document.querySelector(".navLinks").style;
-      toggle.display = toggle.display === "flex" ? "none" : "flex";
+      let toggler = document.querySelector(".navLinks").style;
+      toggler.height = toggler.height === "auto" ? 0 : "auto";
+      toggler.overflow = toggler.overflow === "hidden" ? "none" : "hidden";
+      document.querySelector(".navLinks").classList.toggle("p-3")
     }
   };
 
   // Memoized NavLink component
   const MemoNavLink = React.memo(({ to, icon, text, onClick }) => {
     return (
-      <NavLink className="navLink" to={to} onClick={onClick}>
+      <NavLink className="navLink text-white" to={to} onClick={onClick}>
         <Icon icon={icon} /> {text}
       </NavLink>
     );
@@ -61,16 +63,22 @@ function Navbar() {
     <>
       {/* Navigation bar */}
       <nav className={"navbar fixed-top"}>
-        {/* Logo */}
-        <div>
-          <Link className="navbar-brand" to="/">
-            <img src={ieeeLogo} alt="IEEE" width="60" />
-          </Link>
+        <div className="navbrand">
+          {/* Logo */}
+          <div>
+            <Link className="navbar-brand" to="/">
+              <img src={ieeeLogo} alt="IEEE" width="60" />
+            </Link>
+          </div>
+          {/* Toggler for small screens */}
+          <button
+            className="navbar-toggler"
+            onClick={handleToggle}
+            type="button"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
         </div>
-        {/* Toggler for small screens */}
-        <button className="navbar-toggler" onClick={handleToggle} type="button">
-          <span className="navbar-toggler-icon" />
-        </button>
         {/* Navigation links */}
         <div className="navLinks">
           {navLinks.map((link, index) => (

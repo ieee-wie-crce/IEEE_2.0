@@ -101,9 +101,9 @@ function WIEabout({
   solarIcon,
 }) {
   return (
-    <div className="WIE_MAIN">
+    <div className="WIE_MAIN d-flex align-items-center">
       <div className="WIE">
-        <div className="wie_photo px-2">
+        <div className="wie_photo px-4">
           {/* Display either the actual image or the placeholder based on the loaded state */}
           <img src={wieLogoLoaded ? wieLogo : wieLogoPlaceholder} alt="WIE" />
           <div className="wie_title pt-5">Women In Engineering (WIE)</div>
@@ -146,17 +146,6 @@ function WIEabout({
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="about_footer m-4">
-        <div className="footer_tile">
-          Leveraging Technology for a Better Tomorrow.
-        </div>
-        <div className="footer_desc">
-          IEEE-WIE-CRCE Council organizes acitivites like technical quiz,
-          workshops, session, competitions and debates. It helps the students to
-          become acquainted with the industry which is not provided by the
-          university syllabus.
         </div>
       </div>
     </div>

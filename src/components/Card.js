@@ -19,7 +19,7 @@ function Card(props) {
           </div>
 
           {props.description && (
-            <div className="slider">
+            <div className="slider d-flex align-items-center text-justify">
               <p>{props.description}</p>
             </div>
           )}
