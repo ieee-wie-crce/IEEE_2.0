@@ -31,7 +31,26 @@ import mohika from "../assets/TeamMembers/WIE/mohika.png";
 import raina from "../assets/TeamMembers/WIE/raina.png";
 import janice from "../assets/TeamMembers/WIE/janice.png";
 import mokshada from "../assets/TeamMembers/WIE/mokshada.png";
-
+//Event imports
+import ai from "../assets/events/AI.png";
+import EscapeRoom from "../assets/events/EscapeRoom.png";
+import IVStudents from "../assets/events/IVStudents.png";
+import IVTeachers from "../assets/events/IVTeachers.png";
+import WomenLeadersInStartup from "../assets/events/WomenLeadersInStartup.png";
+import entraprenuer from "../assets/events/entraprenuer.png";
+import goal_achievement from "../assets/events/goal_achievement.png";
+import industry from "../assets/events/industry.png";
+import ingenium from "../assets/events/ingenium.png";
+import lasermaze from "../assets/events/lasermaze.png";
+import prakalp from "../assets/events/prakalp.png";
+import research from "../assets/events/research.png";
+import start_up from "../assets/events/start_up.png";
+import web_designing from "../assets/events/web_designing.png";
+import women_healthcare from "../assets/events/women_healthcare.png";
+import womensDay from "../assets/events/womensDay.png";
+import womensDay23 from "../assets/events/womensDay23.png";
+import technical_paper from "../assets/events/technical_paper.png";
+import PitchDeckPresentation from "../assets/events/PitchDeckPresentation.png"
 const IEEEmembers = [
   rachana,
   santo,
@@ -68,4 +87,37 @@ const WIEmembers = [
   janice,
   mokshada,
 ];
-export { IEEEmembers, WIEmembers };
+
+const AllEvents = [
+  PitchDeckPresentation,
+  prakalp,
+  womensDay23,
+  IVStudents,
+  ai,
+  lasermaze,
+  EscapeRoom,
+  IVTeachers,
+  WomenLeadersInStartup,
+  ingenium,
+  research,
+  entraprenuer,
+  womensDay,
+  web_designing,
+  women_healthcare,
+  industry,
+  goal_achievement,
+  start_up,
+  technical_paper,
+];
+const WIEevents = [
+  prakalp,
+  womensDay23,
+  IVStudents,
+  EscapeRoom,
+  WomenLeadersInStartup,
+  womensDay,
+  web_designing,
+  women_healthcare,
+];
+const UpcomingEvents = [PitchDeckPresentation];
+export { IEEEmembers, WIEmembers, AllEvents, WIEevents, UpcomingEvents };

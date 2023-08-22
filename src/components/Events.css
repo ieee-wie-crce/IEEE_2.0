@@ -1,10 +1,14 @@
 * {
-  transition: 0.5s ease;
   user-select: none;
 }
 .events {
   min-height: 100vh;
-  background-image: linear-gradient(45deg, #8bb1ff 0%, #2BD2FF 52%, #2b3cff 90%);
+  background-image: linear-gradient(
+    45deg,
+    #8bb1ff 0%,
+    #2bd2ff 52%,
+    #2b3cff 90%
+  );
   animation: gradient 5s ease infinite;
   background-size: 400% 400%;
   font-family: monospace;
@@ -81,7 +85,7 @@
   font-size: 20px;
 }
 /* FOR Tablets */
-@media only screen and (max-width: 768px) and (min-width: 414px) {
+@media only screen and (max-width: 768px) and (min-width: 641px) {
   .cardDiv {
     width: 50%;
   }

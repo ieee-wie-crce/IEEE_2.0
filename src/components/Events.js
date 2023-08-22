@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import Tilt from "react-parallax-tilt";
 import cardData from "../data/EventsData.json";
 import eventPlaceholder from "../assets/placeholders/prakalp_placeholder.png";
+import { AllEvents, WIEevents, UpcomingEvents } from "./ImportData";
 import "./Events.css";
 
 function Events() {
@@ -43,6 +44,12 @@ function Events() {
     [cardCondition]
   );
 
+  const showEventImg =(key)=>
+    cardCondition === 1
+      ? AllEvents[key]
+      : cardCondition === "wie"
+      ? WIEevents[key]
+      : UpcomingEvents[key];
   return (
     <div className="events">
       {/* Event title and navigation */}
@@ -75,7 +82,7 @@ function Events() {
                     {/* Event image with conditional loading */}
                     <div className="imgDiv p-2 ">
                       <img
-                        src={eventImgLoaded ? info.imageUrl : eventPlaceholder}
+                        src={eventImgLoaded ? showEventImg(key) : eventPlaceholder}
                         alt={info.name}
                         className="img-fluid rounded w-100"
                         loading="lazy"
@@ -90,7 +97,7 @@ function Events() {
                 </div>
                 {/* Hidden image to trigger image load event */}
                 <img
-                  src={info.imageUrl}
+                  src={showEventImg(key)}
                   alt={info.name}
                   onLoad={handleImageLoad}
                   style={{ display: "none" }} // Hide the image element
