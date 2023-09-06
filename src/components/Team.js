@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Icon } from "@iconify/react";
 import ieeeIcon from "../assets/logos/ieeeIcon.svg";
 import wieIcon from "../assets/logos/wieIcon.svg";
 import "./Team.css";
@@ -40,7 +41,10 @@ function Team() {
     <>
       <div className="team">
         {/* Display the main title */}
-        <div className="mainTitle">OUR TEAM</div>
+        <div className="mainTitle">
+          <Icon icon="fluent:people-team-48-filled" /> OUR{" "}
+          <span style={{ color: "#0d6efd6e" }}>TEAM</span>
+        </div>
         <div className="border" />
         {/* Display the team tab buttons */}
         <div className="titleContainer py-4">

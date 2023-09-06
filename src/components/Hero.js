@@ -3,26 +3,26 @@ import { TypeAnimation } from "react-type-animation";
 import bgvideo2 from "../assets/videos/bgvideo.mp4";
 import { Icon } from "@iconify/react";
 import "../components/Hero.css";
+import WieAbout from "./WieAbout";
+import MentorAbout from "./MentorAbout";
 // Hero component
 function Hero() {
   document.title = "IEEE WIE CRCE";
   return (
     <>
-      {/* Hero container */}
-      <video autoPlay muted loop className="videoBg">
-        <source src={bgvideo2} type="video/mp4" />
-      </video>
-      <div className="heroContainer px-5">
+      <div className="heroContainer snapElement">
+        <video autoPlay muted loop className="videoBg">
+          <source src={bgvideo2} type="video/mp4" />
+        </video>
         <span className="reveal-text text-center">
-          {/* Main heading */}
-          <h1 className="mainHeading ">
-            IEEE WIE 
-          </h1>
-          {/* Sub heading */}
-          <p >Coding the Future, One Line at a Time!</p>
+          <h1 className="mainHeading ">IEEE WIE CRCE</h1>
+          <p>
+            Coding the Future, One Line at a Time!
+            {/* <Icon icon="solar:code-2-outline" /> */}
+            <Icon icon="solar:chat-square-code-bold" />
+          </p>
         </span>
-        {/* Content with typing animation */}
-        <div className="content">
+        <div className="content mx-3">
           <div>
             <Icon icon="iconamoon:send" /> {/* Typing animation */}
             <TypeAnimation
@@ -49,6 +49,12 @@ function Hero() {
             />
           </div>
         </div>
+      </div>
+      {/* <div className="snapElement">
+        <MentorAbout />
+      </div> */}
+      <div className="snapElement">
+        <WieAbout />
       </div>
     </>
   );

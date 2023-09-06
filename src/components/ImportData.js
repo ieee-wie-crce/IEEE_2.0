@@ -50,7 +50,15 @@ import women_healthcare from "../assets/events/women_healthcare.png";
 import womensDay from "../assets/events/womensDay.png";
 import womensDay23 from "../assets/events/womensDay23.png";
 import technical_paper from "../assets/events/technical_paper.png";
-import PitchDeckPresentation from "../assets/events/PitchDeckPresentation.png"
+import PitchDeckPresentation from "../assets/events/PitchDeckPresentation.png";
+import startup_ecosystem from '../assets/events/stratup_ecosystem.png';
+//Mentors
+import sapna from "../assets/TeamMembers/Mentors/sapna.jpg";
+import sushma from "../assets/TeamMembers/Mentors/sushma.jpg";
+import swapnali from "../assets/TeamMembers/Mentors/swapnali.jpg";
+
+const Mentors = [sapna, sushma, swapnali];
+
 const IEEEmembers = [
   rachana,
   santo,
@@ -90,6 +98,7 @@ const WIEmembers = [
 
 const AllEvents = [
   PitchDeckPresentation,
+  startup_ecosystem,
   prakalp,
   womensDay23,
   IVStudents,
@@ -109,7 +118,9 @@ const AllEvents = [
   start_up,
   technical_paper,
 ];
+
 const WIEevents = [
+  startup_ecosystem,
   prakalp,
   womensDay23,
   IVStudents,
@@ -119,5 +130,12 @@ const WIEevents = [
   web_designing,
   women_healthcare,
 ];
-const UpcomingEvents = [PitchDeckPresentation];
-export { IEEEmembers, WIEmembers, AllEvents, WIEevents, UpcomingEvents };
+const UpcomingEvents = [];
+export {
+  Mentors,
+  IEEEmembers,
+  WIEmembers,
+  AllEvents,
+  WIEevents,
+  UpcomingEvents,
+};

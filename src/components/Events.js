@@ -44,7 +44,7 @@ function Events() {
     [cardCondition]
   );
 
-  const showEventImg =(key)=>
+  const showEventImg = (key) =>
     cardCondition === 1
       ? AllEvents[key]
       : cardCondition === "wie"
@@ -53,7 +53,9 @@ function Events() {
   return (
     <div className="events">
       {/* Event title and navigation */}
-      <div className="eventTitle">Events</div>
+      <div className="eventTitle">
+        <Icon icon="tabler:timeline-event" /> Events
+      </div>
       <div className="border" />
       <div className="navigation d-flex justify-content-center container">
         <Link className="tab all is-active" onClick={handleActive}>
@@ -82,7 +84,9 @@ function Events() {
                     {/* Event image with conditional loading */}
                     <div className="imgDiv p-2 ">
                       <img
-                        src={eventImgLoaded ? showEventImg(key) : eventPlaceholder}
+                        src={
+                          eventImgLoaded ? showEventImg(key) : eventPlaceholder
+                        }
                         alt={info.name}
                         className="img-fluid rounded w-100"
                         loading="lazy"
@@ -90,7 +94,7 @@ function Events() {
                     </div>
                     {/* Event description */}
                     <div className="eventContent p-1">
-                      <Icon icon="mdi:resource-description-framework" />{" "}
+                      <Icon icon="icons8:idea" />{" "}
                       {info.description}
                     </div>
                   </div>

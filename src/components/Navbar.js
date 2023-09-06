@@ -1,12 +1,9 @@
-import React, { useMemo, useRef } from "react";
+import React, { useMemo } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import ieeeLogo from "../assets/logos/ieee-wie-logo.png";
-import emailjs from "@emailjs/browser";
 import "./Navbar.css";
-const Modal = React.lazy(() => import("./Modal"));
 function Navbar() {
-  const form = useRef();
   // Memoized handleToggle function
   const handleToggle = () => {
     if (window.innerWidth <= 768) {
@@ -34,31 +31,7 @@ function Navbar() {
       { to: "/team", icon: "fluent:people-team-16-regular", text: "Team" },
     ];
   }, []);
-  const handleSubmit = (e) => {
-    let sendBtn = e.target[4];
-    e.preventDefault();
-    sendBtn.innerText = "Sending..";
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAIL_JS_SERVICE_ID,
-        process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result);
-          sendBtn.classList.add("btn-success");
-          sendBtn.innerHTML = "Sent!";
-          sendBtn.disabled = true;
-        },
-        (error) => {
-          console.log(error);
-          sendBtn.classList.add("btn-danger");
-          sendBtn.innerText = "ERROR!";
-        }
-      );
-  };
+  
   return (
     <>
       {/* Navigation bar */}
@@ -76,7 +49,7 @@ function Navbar() {
             onClick={handleToggle}
             type="button"
           >
-            <span className="navbar-toggler-icon" />
+            <span><Icon icon="line-md:menu" /></span>
           </button>
         </div>
         {/* Navigation links */}
@@ -100,8 +73,6 @@ function Navbar() {
           </button>
         </div>
       </nav>
-      {/* Contact Modal */}
-      <Modal form={form} handleSubmit={handleSubmit} />
     </>
   );
 }

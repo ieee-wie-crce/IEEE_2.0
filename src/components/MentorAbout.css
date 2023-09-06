@@ -1,0 +1,66 @@
+.mentorAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(at left top, #2373ce, #8e9eed, #2373ce);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  padding-top: 6rem;
+  min-height: 100vh;
+}
+
+.mentorAbout > header {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.mentorContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mentorCard {
+  padding: 18px 18px 9px;
+  background: rgba(227, 242, 253, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  width: 75%;
+}
+
+.mentorMeta {
+  text-align: center;
+  padding: 5px 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+}
+/* FOR Tablets */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .mentorContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .mentorCard {
+    width: 40%;
+  }
+  .mentorAbout > header {
+    font-size: 2.8rem;
+  }
+}
+/* FOR Desktop */
+@media only screen and (min-width: 1024px) {
+  .mentorContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .mentorCard {
+    width: 25%;
+  }
+  .mentorAbout > header {
+    font-size: 3rem;
+  }
+}

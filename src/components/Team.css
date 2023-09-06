@@ -1,11 +1,10 @@
 .mainTitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #fff;
 }
 .team {
   min-height: 100vh;
   background-image: linear-gradient(240deg, #21d4fd 0%, #b721ff 100%);
-
   animation: gradient 5s ease infinite;
   background-size: 400% 400%;
   font-family: monospace;
@@ -97,12 +96,12 @@
   font-size: 1rem;
 }
 /* FOR Tablets */
-@media only screen and (max-width: 768px) and (min-width: 641px) {
+@media only screen and (max-width: 1024px) and (min-width: 641px) {
   .tiltDiv {
     width: 40%;
   }
   .mainTitle {
-    font-size: 3em;
+    font-size: 2.7em;
   }
 }
 /* For Desktops */
@@ -111,6 +110,6 @@
     width: 30%;
   }
   .mainTitle {
-    font-size: 5em;
+    font-size: 3em;
   }
 }

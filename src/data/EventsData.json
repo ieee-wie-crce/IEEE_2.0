@@ -1,8 +1,13 @@
 [
   {
     "title": "Perfect Pitch Deck Presentation",
-    "description": "The event is about a brief presentation which showcases key aspects of your business plan and is used to pitch to investors.",
-    "keyword": "upcoming"
+    "description": "The event is about a brief presentation which showcases key aspects of your business plan and is used to pitch to investors.",
+    "keyword": 1
+  },
+  {
+    "title":"Startup Ecosystem",
+    "description":"Prof. Heena Pendhari guided us through the 'Startup Ecosystem' event, where everyone explored ideas, innovations, and research.",
+    "keyword":"wie"
   },
   {
     "title": "Prakalp: Project Competition",
