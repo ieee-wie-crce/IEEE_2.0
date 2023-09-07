@@ -2,8 +2,9 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import bgvideo2 from "../assets/videos/bgvideo.mp4";
 import { Icon } from "@iconify/react";
-import "../components/Hero.css";
+import "../css/Hero.css";
 import WieAbout from "./WieAbout";
+// eslint-disable-next-line
 import MentorAbout from "./MentorAbout";
 // Hero component
 function Hero() {

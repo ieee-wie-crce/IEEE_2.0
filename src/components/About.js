@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import "./About.css";
+import "../css/About.css";
 import manIcon from "../assets/icons/man.png";
 import bulbIcon from "../assets/icons/bulb.png";
 import missionIcon from "../assets/icons/mission.png";

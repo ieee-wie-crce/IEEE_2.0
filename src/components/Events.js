@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 import cardData from "../data/EventsData.json";
 import eventPlaceholder from "../assets/placeholders/prakalp_placeholder.png";
 import { AllEvents, WIEevents, UpcomingEvents } from "./ImportData";
-import "./Events.css";
+import "../css/Events.css";
 
 function Events() {
   // Set the document title

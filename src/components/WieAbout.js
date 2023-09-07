@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 import wieLogoPlaceholder from "../assets/placeholders/wie-placeholder.png";
 import wieLogo from "../assets/wieTeam.jpg";
-import './About.css'
+import '../css/About.css'
 function WieAbout() {
   // Icons for WIE Vision and WIE Mission
   const visionIcon = <Icon height="2rem" icon="tabler:device-vision-pro" />;

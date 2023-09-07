@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import icon from "../assets/logos/ieee-white-logo.png";
-import "./Card.css";
+import "../css/Card.css";
 function Card(props) {
   return (
     <>

@@ -97,8 +97,8 @@ const WIEmembers = [
 ];
 
 const AllEvents = [
-  PitchDeckPresentation,
   startup_ecosystem,
+  PitchDeckPresentation,
   prakalp,
   womensDay23,
   IVStudents,

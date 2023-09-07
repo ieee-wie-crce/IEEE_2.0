@@ -11,7 +11,10 @@ const Team = React.lazy(() => import("./components/Team"));
 const Error = React.lazy(() => import("./components/Error"));
 const Modal = React.lazy(() => import("./components/Modal"));
 function App() {
-
+  console.log(
+    `%c${process.env.REACT_APP_SECRET_MESSAGE}`,
+    "color: #00a67d; font-weight:bold"
+  );
   const form = useRef();
 
   const handleSubmit = (e) => {
@@ -39,7 +42,7 @@ function App() {
         }
       );
   };
-  
+
   return (
     <>
       <Router>

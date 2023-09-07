@@ -1,5 +1,5 @@
 import React from "react";
-import "./MentorAbout.css";
+import "../css/MentorAbout.css";
 import Mentor from "./Mentor";
 import { Icon } from "@iconify/react";
 import mentorPlaceholder from "../assets/placeholders/mentorPlaceholder.png";

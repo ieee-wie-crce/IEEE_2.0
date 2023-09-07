@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import ieeeIcon from "../assets/logos/ieeeIcon.svg";
 import wieIcon from "../assets/logos/wieIcon.svg";
-import "./Team.css";
+import "../css/Team.css";
 import { IEEEmembers, WIEmembers } from "./ImportData"; // Import arrays of IEEE and WIE team members
 import placeholderImg from "../assets/placeholders/download.png"; // Placeholder image for unloaded images
 import teamMembers from "../data/TeamData.json"; // Import data containing team member information
