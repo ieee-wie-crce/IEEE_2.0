@@ -58,9 +58,6 @@ video {
   transform: translateY(50px);
   animation: revealAnimation 3s forwards;
 }
-section {
-  min-height: 100vh;
-}
 
 @media only screen and (max-width: 768px) {
   * {

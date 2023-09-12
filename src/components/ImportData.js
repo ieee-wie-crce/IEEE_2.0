@@ -41,6 +41,7 @@ import entraprenuer from "../assets/events/entraprenuer.png";
 import goal_achievement from "../assets/events/goal_achievement.png";
 import industry from "../assets/events/industry.png";
 import ingenium from "../assets/events/ingenium.png";
+import ingenium2 from "../assets/events/ingenium2.png";
 import lasermaze from "../assets/events/lasermaze.png";
 import prakalp from "../assets/events/prakalp.png";
 import research from "../assets/events/research.png";
@@ -97,6 +98,7 @@ const WIEmembers = [
 ];
 
 const AllEvents = [
+  ingenium2,
   startup_ecosystem,
   PitchDeckPresentation,
   prakalp,
@@ -120,6 +122,7 @@ const AllEvents = [
 ];
 
 const WIEevents = [
+  ingenium2,
   startup_ecosystem,
   prakalp,
   womensDay23,
@@ -130,7 +133,7 @@ const WIEevents = [
   web_designing,
   women_healthcare,
 ];
-const UpcomingEvents = [];
+const UpcomingEvents = [ingenium2];
 export {
   Mentors,
   IEEEmembers,

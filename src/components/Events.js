@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import Tilt from "react-parallax-tilt";
 import cardData from "../data/EventsData.json";
 import eventPlaceholder from "../assets/placeholders/prakalp_placeholder.png";
+import bannerImg from "../assets/ingenium2_banner.png";
 import { AllEvents, WIEevents, UpcomingEvents } from "./ImportData";
 import "../css/Events.css";
 
@@ -57,6 +58,22 @@ function Events() {
         <Icon icon="tabler:timeline-event" /> Events
       </div>
       <div className="border" />
+      <div
+        className="ingeniumBanner m-4 d-flex justify-content-center"
+        title="Register Now!"
+      >
+        <a
+          href="https://shorturl.at/wCYZ8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={bannerImg}
+            alt="Ingenium 2.0"
+            className="img-fluid rounded-4"
+          />
+        </a>
+      </div>
       <div className="navigation d-flex justify-content-center container">
         <Link className="tab all is-active" onClick={handleActive}>
           <Icon icon="material-symbols:select-all-rounded" /> All
@@ -94,8 +111,7 @@ function Events() {
                     </div>
                     {/* Event description */}
                     <div className="eventContent p-1">
-                      <Icon icon="icons8:idea" />{" "}
-                      {info.description}
+                      <Icon icon="icons8:idea" /> {info.description}
                     </div>
                   </div>
                 </div>
