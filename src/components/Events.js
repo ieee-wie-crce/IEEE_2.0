@@ -2,10 +2,8 @@ import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import Tilt from "react-parallax-tilt";
-import cardData from "../data/EventsData.json";
 import eventPlaceholder from "../assets/placeholders/prakalp_placeholder.png";
-import bannerImg from "../assets/ingenium2_banner.png";
-import { AllEvents, WIEevents, UpcomingEvents } from "./ImportData";
+import { EVENTS } from "./ImportData";
 import "../css/Events.css";
 
 function Events() {
@@ -13,7 +11,7 @@ function Events() {
   document.title = "EVENTS";
 
   // State for the active card condition and event image load status
-  const [cardCondition, setCardCondition] = useState(1);
+  const [cardCondition, setCardCondition] = useState("all");
   const [eventImgLoaded, setEventImgLoaded] = useState(false);
 
   // Function to handle menu item clicks and update card condition
@@ -27,7 +25,7 @@ function Events() {
         ? "upcoming"
         : ele.target.classList.contains("wie")
         ? "wie"
-        : 1 //all
+        : "all"
     );
   };
 
@@ -39,18 +37,17 @@ function Events() {
   // Memoized filtered data based on card condition
   const filteredData = useMemo(
     () =>
-      cardData.filter(
-        (info) => info.keyword === cardCondition || cardCondition === 1
-      ),
+      cardCondition === "all"
+        ? EVENTS
+        : EVENTS.filter((info) =>
+            info.keyword
+              .toString()
+              .split(",")
+              .includes(cardCondition.toString())
+          ),
     [cardCondition]
   );
-
-  const showEventImg = (key) =>
-    cardCondition === 1
-      ? AllEvents[key]
-      : cardCondition === "wie"
-      ? WIEevents[key]
-      : UpcomingEvents[key];
+  console.log(filteredData);
   return (
     <div className="events">
       {/* Event title and navigation */}
@@ -58,22 +55,6 @@ function Events() {
         <Icon icon="tabler:timeline-event" /> Events
       </div>
       <div className="border" />
-      <div
-        className="ingeniumBanner m-4 d-flex justify-content-center"
-        title="Register Now!"
-      >
-        <a
-          href="https://shorturl.at/wCYZ8"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={bannerImg}
-            alt="Ingenium 2.0"
-            className="img-fluid rounded-4"
-          />
-        </a>
-      </div>
       <div className="navigation d-flex justify-content-center container">
         <Link className="tab all is-active" onClick={handleActive}>
           <Icon icon="material-symbols:select-all-rounded" /> All
@@ -93,18 +74,15 @@ function Events() {
             id={`card-${key}`}
             className="cardDiv d-flex justify-content-center"
           >
-            {/* Render card content only if the condition matches */}
-            {(info.keyword === cardCondition || cardCondition === 1) && (
+            {
               <Tilt className="eventTiltDiv" tiltReverse={true} scale={1.2}>
                 <div className="eventCard">
                   <div className="eventDiv">
                     {/* Event image with conditional loading */}
                     <div className="imgDiv p-2 ">
                       <img
-                        src={
-                          eventImgLoaded ? showEventImg(key) : eventPlaceholder
-                        }
-                        alt={info.name}
+                        src={eventImgLoaded ? info.imgsrc : eventPlaceholder}
+                        alt={info.title}
                         className="img-fluid rounded w-100"
                         loading="lazy"
                       />
@@ -117,13 +95,13 @@ function Events() {
                 </div>
                 {/* Hidden image to trigger image load event */}
                 <img
-                  src={showEventImg(key)}
-                  alt={info.name}
+                  src={info.imgsrc}
+                  alt={info.title}
                   onLoad={handleImageLoad}
                   style={{ display: "none" }} // Hide the image element
                 />
               </Tilt>
-            )}
+            }
           </div>
         ))}
       </div>

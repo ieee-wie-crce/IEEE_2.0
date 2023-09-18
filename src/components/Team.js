@@ -4,9 +4,8 @@ import { Icon } from "@iconify/react";
 import ieeeIcon from "../assets/logos/ieeeIcon.svg";
 import wieIcon from "../assets/logos/wieIcon.svg";
 import "../css/Team.css";
-import { IEEEmembers, WIEmembers } from "./ImportData"; // Import arrays of IEEE and WIE team members
+import { MEMBERS } from "./ImportData"; // Import arrays of IEEE and WIE team members
 import placeholderImg from "../assets/placeholders/download.png"; // Placeholder image for unloaded images
-import teamMembers from "../data/TeamData.json"; // Import data containing team member information
 const TeamMember = React.lazy(() => import("./TeamMember"));
 function Team() {
   // Set the document title
@@ -32,11 +31,11 @@ function Team() {
   };
 
   // Filter team member data based on the active team condition
-  const filteredCards = teamMembers.filter(
+  const memberCards = MEMBERS.filter(
     (member) => member.team === teamCardsCondition
   );
+  console.log(memberCards);
 
-  const ShowSocialLinks = () => {};
   return (
     <>
       <div className="team">
@@ -66,17 +65,15 @@ function Team() {
         </div>
         {/* Display team members */}
         <div className="teamMembers">
-          {filteredCards.map((member, index) => (
+          {memberCards.map((member, index) => (
             <TeamMember
+
               key={index}
               member={member}
+              Icon={Icon}
               index={index}
               imageLoaded={imageLoaded}
-              teamCardsCondition={teamCardsCondition}
               placeholderImg={placeholderImg}
-              IEEEmembers={IEEEmembers}
-              WIEmembers={WIEmembers}
-              ShowSocialLinks={ShowSocialLinks}
               handleImageLoad={handleImageLoad}
             />
           ))}

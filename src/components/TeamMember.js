@@ -1,15 +1,11 @@
 import React from "react";
-import { Icon } from "@iconify/react";
 import Tilt from "react-parallax-tilt";
 export default function TeamMember({
   member,
+  Icon,
   index,
   imageLoaded,
-  teamCardsCondition,
   placeholderImg,
-  IEEEmembers,
-  WIEmembers,
-  ShowSocialLinks,
   handleImageLoad,
 }) {
   return (
@@ -24,13 +20,7 @@ export default function TeamMember({
           {/* Display team member image */}
           <div className="imgDiv">
             <img
-              src={
-                imageLoaded
-                  ? teamCardsCondition === "IEEE"
-                    ? IEEEmembers[index]
-                    : WIEmembers[index]
-                  : placeholderImg
-              }
+              src={imageLoaded ? member.imgsrc : placeholderImg}
               loading="lazy"
               alt={member.name.toUpperCase()}
               className="img-fluid w-100"
@@ -52,7 +42,7 @@ export default function TeamMember({
                   <Icon icon="bi:instagram" />
                 </a>
               )}
-              <div className="showSocialLinksBtn" onClick={ShowSocialLinks}>
+              <div className="showSocialLinksBtn">
                 <Icon icon="tabler:social" />
               </div>
               {member.linkedin && (
@@ -71,9 +61,7 @@ export default function TeamMember({
       </div>
       {/* Hidden image element to trigger image load event */}
       <img
-        src={
-          teamCardsCondition === "IEEE" ? IEEEmembers[index] : WIEmembers[index]
-        }
+        src={member.imgsrc}
         alt="Member Background"
         onLoad={handleImageLoad}
         style={{
