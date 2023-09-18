@@ -1,13 +1,14 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
-export default function TeamMember({
-  member,
-  Icon,
-  index,
-  imageLoaded,
-  placeholderImg,
-  handleImageLoad,
-}) {
+export default function TeamMember(props) {
+  const {
+    member,
+    Tilt,
+    Icon,
+    index,
+    imageLoaded,
+    placeholderImg,
+    handleImageLoad,
+  } = props;
   return (
     <Tilt
       className={`tiltDiv card-${index}`}

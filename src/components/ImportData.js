@@ -58,159 +58,16 @@ import sapna from "../assets/TeamMembers/Mentors/sapna.jpg";
 import sushma from "../assets/TeamMembers/Mentors/sushma.jpg";
 import swapnali from "../assets/TeamMembers/Mentors/swapnali.jpg";
 
-const Mentors = [sapna, sushma, swapnali];
-
-const EVENTS = [
-  {
-    title: "Ingenium: Igniting Innovation on Engineer's Day",
-    imgsrc: ingenium2,
-    description:
-      "Get ready for a jaw-dropping engineering spectacle at Ingenium, where students' ingenuity ignites a thrilling show of innovation!",
-    keyword: "wie",
-  },
-  {
-    title: "Startup Ecosystem",
-    imgsrc: startup_ecosystem,
-    description:
-      "Prof. Heena Pendhari guided us through the 'Startup Ecosystem' event, where everyone explored ideas, innovations, and research.",
-    keyword: "wie",
-  },
-  {
-    title: "Perfect Pitch Deck Presentation",
-    imgsrc: PitchDeckPresentation,
-    description:
-      "The event is about a brief presentation which showcases key aspects of your business plan and is used to pitch to investors.",
-    keyword: "",
-  },
-  {
-    title: "Prakalp: Project Competition",
-    imgsrc: prakalp,
-    description:
-      "A National level project competition which involves the hardware and software domain",
-    keyword: "wie",
-  },
-
-  {
-    title: "Women's Day Celebration 2023",
-    imgsrc: womensDay23,
-    description:
-      "Celebrated International Women's Day with Mental Health Awareness Session.",
-    keyword: "wie",
-  },
-
-  {
-    title: "Industrial Visit",
-    imgsrc: IVStudents,
-    description:
-      "An industrial visit organised by WIE for students of FRCRCE to Sify's data centre",
-    keyword: "wie",
-  },
-  {
-    title: "Seminar on AI",
-    imgsrc: ai,
-    description:
-      "Mr Uday Kamath, an alumni of FRCRCE gave insights in the world of AI",
-    keyword: "",
-  },
-  {
-    title: "Laser Maze",
-    imgsrc: lasermaze,
-    description:
-      "IEEE council organized Laser Maze game for Synergy Fest 2k22.",
-    keyword: "",
-  },
-  {
-    title: "CRCE TRANSYLVANIA",
-    imgsrc: EscapeRoom,
-    description:
-      "WIE council organized CRCE themed Escape Room game for the Synergy Fest 2k22.",
-    keyword: "wie",
-  },
-  {
-    title: "Industrial Visit and Training at SICK INDIA",
-    imgsrc: IVTeachers,
-    description:
-      "IEEE in association with AI & DS Department organized a visit to SICK INDIA PVT LTD at Naigaon",
-    keyword: "",
-  },
-  {
-    title: "Women Leaders in Startup",
-    imgsrc: WomenLeadersInStartup,
-    description:
-      "Mrs. Jyoti Bharadwaj shared her experience as Woman Entrepreneur and Founder",
-    keyword: "wie",
-  },
-  {
-    title: "Ingenium- Engineer's Day Competition",
-    imgsrc: ingenium,
-    description:
-      "A problem statement and creative solutions bought up by the students.",
-    keyword: "",
-  },
-  {
-    title: "Writing Research Paper and Patent Application",
-    imgsrc: research,
-    description:
-      "Students got important insights from our Principal Sir and his student-Jenil Dave.",
-    keyword: "",
-  },
-  {
-    title: "Succesful Startup Founders",
-    imgsrc: entraprenuer,
-    description:
-      "Meet alumni of our college, Mr.Mohamad Ahmed; founder of Hridam Surgicals.",
-    keyword: "",
-  },
-  {
-    title: "Women's Day Celebration 2022",
-    imgsrc: womensDay,
-    description:
-      "First offline event after the pandemic to celebrate International Women's Day.",
-    keyword: "wie",
-  },
-  {
-    title: "Web Designing Workshop",
-    imgsrc: web_designing,
-    description:
-      "A workshop to introduce students to website building and design thinking for web based projects.",
-    keyword: "wie",
-  },
-  {
-    title: "Women Healthcare Awareness",
-    imgsrc: women_healthcare,
-    description:
-      "A gynecologist for busting myths about periods, PCOD, PCOS, and female hygiene.",
-    keyword: "wie",
-  },
-  {
-    title: "Industrial Trends and Technology",
-    imgsrc: industry,
-    description:
-      "A session to enlighten students about the industrial trends and the demands that people make from the Industry and how those can be fulfilled.",
-    keyword: "",
-  },
-  {
-    title: "Goal Achievement Program",
-    imgsrc: goal_achievement,
-    description:
-      "A session exclusively for Fr. CRCE teachers on achieving goals.",
-    keyword: "",
-  },
-  {
-    title: "Succesful Start-Up Founders",
-    imgsrc: start_up,
-    description:
-      "A webinar for students to gain knowledge about the skills required for entrepreneurship.",
-    keyword: "",
-  },
-  {
-    title: "Technical Paper Webinar",
-    imgsrc: technical_paper,
-    description:
-      "Webinar for the students to learn about the selection of a topic and how to write a technical paper.",
-    keyword: "",
-  },
-];
+// Trying to import all the images dynamically!
+// function importAllImages(MEMBERS) {
+//   const images = {};
+//   MEMBERS.forEach((member) => {
+//     images[member.name] = require(`../assets/TeamMembers/${member.team}/${
+//       member.name.toLowerCase().split(" ")[0]
+//     }.png`);
+//   });
+//   return images;
+// }
 
 const MEMBERS = [
   {
@@ -492,4 +349,160 @@ const MEMBERS = [
     icon: "fluent:person-ribbon-20-regular",
   },
 ];
+
+// const MemberImages = importAllImages(MEMBERS);
+// console.log(MemberImages);
+
+const EVENTS = [
+  {
+    title: "Ingenium: Igniting Innovation on Engineer's Day",
+    imgsrc: ingenium2,
+    description:
+      "Get ready for a jaw-dropping engineering spectacle at Ingenium, where students' ingenuity ignites a thrilling show of innovation!",
+    keyword: "wie",
+  },
+  {
+    title: "Startup Ecosystem",
+    imgsrc: startup_ecosystem,
+    description:
+      "Prof. Heena Pendhari guided us through the 'Startup Ecosystem' event, where everyone explored ideas, innovations, and research.",
+    keyword: "wie",
+  },
+  {
+    title: "Perfect Pitch Deck Presentation",
+    imgsrc: PitchDeckPresentation,
+    description:
+      "The event is about a brief presentation which showcases key aspects of your business plan and is used to pitch to investors.",
+    keyword: "",
+  },
+  {
+    title: "Prakalp: Project Competition",
+    imgsrc: prakalp,
+    description:
+      "A National level project competition which involves the hardware and software domain",
+    keyword: "wie",
+  },
+
+  {
+    title: "Women's Day Celebration 2023",
+    imgsrc: womensDay23,
+    description:
+      "Celebrated International Women's Day with Mental Health Awareness Session.",
+    keyword: "wie",
+  },
+
+  {
+    title: "Industrial Visit",
+    imgsrc: IVStudents,
+    description:
+      "An industrial visit organised by WIE for students of FRCRCE to Sify's data centre",
+    keyword: "wie",
+  },
+  {
+    title: "Seminar on AI",
+    imgsrc: ai,
+    description:
+      "Mr Uday Kamath, an alumni of FRCRCE gave insights in the world of AI",
+    keyword: "",
+  },
+  {
+    title: "Laser Maze",
+    imgsrc: lasermaze,
+    description:
+      "IEEE council organized Laser Maze game for Synergy Fest 2k22.",
+    keyword: "",
+  },
+  {
+    title: "CRCE TRANSYLVANIA",
+    imgsrc: EscapeRoom,
+    description:
+      "WIE council organized CRCE themed Escape Room game for the Synergy Fest 2k22.",
+    keyword: "wie",
+  },
+  {
+    title: "Industrial Visit and Training at SICK INDIA",
+    imgsrc: IVTeachers,
+    description:
+      "IEEE in association with AI & DS Department organized a visit to SICK INDIA PVT LTD at Naigaon",
+    keyword: "",
+  },
+  {
+    title: "Women Leaders in Startup",
+    imgsrc: WomenLeadersInStartup,
+    description:
+      "Mrs. Jyoti Bharadwaj shared her experience as Woman Entrepreneur and Founder",
+    keyword: "wie",
+  },
+  {
+    title: "Ingenium- Engineer's Day Competition",
+    imgsrc: ingenium,
+    description:
+      "A problem statement and creative solutions bought up by the students.",
+    keyword: "",
+  },
+  {
+    title: "Writing Research Paper and Patent Application",
+    imgsrc: research,
+    description:
+      "Students got important insights from our Principal Sir and his student-Jenil Dave.",
+    keyword: "",
+  },
+  {
+    title: "Succesful Startup Founders",
+    imgsrc: entraprenuer,
+    description:
+      "Meet alumni of our college, Mr.Mohamad Ahmed; founder of Hridam Surgicals.",
+    keyword: "",
+  },
+  {
+    title: "Women's Day Celebration 2022",
+    imgsrc: womensDay,
+    description:
+      "First offline event after the pandemic to celebrate International Women's Day.",
+    keyword: "wie",
+  },
+  {
+    title: "Web Designing Workshop",
+    imgsrc: web_designing,
+    description:
+      "A workshop to introduce students to website building and design thinking for web based projects.",
+    keyword: "wie",
+  },
+  {
+    title: "Women Healthcare Awareness",
+    imgsrc: women_healthcare,
+    description:
+      "A gynecologist for busting myths about periods, PCOD, PCOS, and female hygiene.",
+    keyword: "wie",
+  },
+  {
+    title: "Industrial Trends and Technology",
+    imgsrc: industry,
+    description:
+      "A session to enlighten students about the industrial trends and the demands that people make from the Industry and how those can be fulfilled.",
+    keyword: "",
+  },
+  {
+    title: "Goal Achievement Program",
+    imgsrc: goal_achievement,
+    description:
+      "A session exclusively for Fr. CRCE teachers on achieving goals.",
+    keyword: "",
+  },
+  {
+    title: "Succesful Start-Up Founders",
+    imgsrc: start_up,
+    description:
+      "A webinar for students to gain knowledge about the skills required for entrepreneurship.",
+    keyword: "",
+  },
+  {
+    title: "Technical Paper Webinar",
+    imgsrc: technical_paper,
+    description:
+      "Webinar for the students to learn about the selection of a topic and how to write a technical paper.",
+    keyword: "",
+  },
+];
+const Mentors = [sapna, sushma, swapnali];
 export { Mentors, EVENTS, MEMBERS };

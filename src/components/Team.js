@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
+import Tilt from "react-parallax-tilt";
 import ieeeIcon from "../assets/logos/ieeeIcon.svg";
 import wieIcon from "../assets/logos/wieIcon.svg";
+import { MEMBERS } from "./ImportData";
+import memberPlaceholderImg from "../assets/placeholders/memberPlaceholder.png";
 import "../css/Team.css";
-import { MEMBERS } from "./ImportData"; // Import arrays of IEEE and WIE team members
-import placeholderImg from "../assets/placeholders/download.png"; // Placeholder image for unloaded images
 const TeamMember = React.lazy(() => import("./TeamMember"));
 function Team() {
   // Set the document title
   document.title = "IEEE & WIE TEAM";
-
   // State for managing active team card condition and image loading status
   const [teamCardsCondition, setTeamCardsCondition] = useState("IEEE");
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -25,8 +25,6 @@ function Team() {
     const menu = document.querySelectorAll(".teamLink");
     menu.forEach((tab) => tab.classList.remove("is-active"));
     e.target.classList.add("is-active");
-
-    // Update the active team card condition based on the clicked tab
     setTeamCardsCondition(e.target.classList.contains("IEEE") ? "IEEE" : "WIE");
   };
 
@@ -34,7 +32,9 @@ function Team() {
   const memberCards = MEMBERS.filter(
     (member) => member.team === teamCardsCondition
   );
-  console.log(memberCards);
+  useEffect(() => {
+    setImageLoaded(false);
+  }, [teamCardsCondition]);
 
   return (
     <>
@@ -67,13 +67,13 @@ function Team() {
         <div className="teamMembers">
           {memberCards.map((member, index) => (
             <TeamMember
-
               key={index}
               member={member}
+              Tilt = {Tilt}
               Icon={Icon}
               index={index}
               imageLoaded={imageLoaded}
-              placeholderImg={placeholderImg}
+              placeholderImg={memberPlaceholderImg}
               handleImageLoad={handleImageLoad}
             />
           ))}
