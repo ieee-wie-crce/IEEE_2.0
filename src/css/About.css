@@ -26,7 +26,21 @@ header > span {
 .cards {
   animation: revealAnimation 1s forwards;
 }
-
+/* IEEE */
+.IEEE_MAIN {
+  min-height: 100vh;
+  background-size: 400% 400% !important;
+  padding: 5rem 0 0.1rem 0;
+  background-image: linear-gradient(to right, #6a11cb 0%, #1b57cb 100%);
+  animation: gradient 5s ease infinite;
+}
+.ieee_title{
+  color: #fff;
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 500;
+  font-family: monospace;
+}
 /* WIE */
 .WIE {
   display: flex;
@@ -43,6 +57,9 @@ header > span {
 }
 .wie_photo > img {
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .wie_title {
   color: #fff;

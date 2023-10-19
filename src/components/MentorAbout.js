@@ -22,8 +22,7 @@ function MentorAbout() {
     <>
       <div className="mentorAbout">
         <header>
-          <Icon icon="fluent-mdl2:party-leader" /> OUR{" "}
-          <span style={{ color: "#0d6efd6e" }}>MENTORS</span>
+          <Icon icon="fluent-mdl2:party-leader" /> OUR MENTORS
         </header>
         <div className="border mb-4" />
         <div className="mentorContainer pb-5">

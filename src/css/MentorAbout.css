@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: radial-gradient(at left top, #2373ce, #8e9eed, #2373ce);
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(52, 140, 245, 1) 30%,
+    rgba(52, 116, 243, 1) 91.2%
+  );
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
   padding-top: 6rem;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
-import wieLogoPlaceholder from "../assets/placeholders/wie-placeholder.png";
+import wieLogoPlaceholder from "../assets/placeholders/placeholder.png";
 import wieLogo from "../assets/wieTeam.jpg";
 import '../css/About.css'
 function WieAbout() {
@@ -24,7 +24,8 @@ function WieAbout() {
         <div className="wie_photo px-4">
           {/* Display either the actual image or the placeholder based on the loaded state */}
           <img className="rounded-4" src={wieLogoLoaded ? wieLogo : wieLogoPlaceholder} alt="WIE" />
-          <div className="wie_title pt-5">Women In Engineering (WIE)</div>
+          <div className="wie_title pt-5">Women In Engineering (WIE)            <Icon icon="simple-line-icons:energy" />
+</div>
         </div>
         <div className="wie_content">
           <div>
