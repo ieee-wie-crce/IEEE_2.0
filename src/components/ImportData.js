@@ -504,5 +504,21 @@ const EVENTS = [
     keyword: "",
   },
 ];
-const Mentors = [sapna, sushma, swapnali];
-export { Mentors, EVENTS, MEMBERS };
+const MENTORS = [
+  {
+    name: "Mrs. Sushma Nagdeote",
+    description: "WIE-CRCE Branch Counsellor",
+    imgsrc: sushma,
+  },
+  {
+    name: "Mrs. Sapna Prabhu",
+    description: "IEEE-CRCE Branch Mentor",
+    imgsrc: sapna,
+  },
+  {
+    name: "Mrs. Swapnali Makdey",
+    description: "IEEE-CRCE Branch Counsellor",
+    imgsrc: swapnali,
+  },
+];
+export { MENTORS, EVENTS, MEMBERS };

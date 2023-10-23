@@ -5,8 +5,6 @@ import { Icon } from "@iconify/react";
 import IeeeAbout from "./IeeeAbout";
 import "../css/Hero.css";
 import WieAbout from "./WieAbout";
-// eslint-disable-next-line
-import MentorAbout from "./MentorAbout";
 // Hero component
 function Hero() {
   document.title = "IEEE WIE CRCE";
@@ -51,9 +49,6 @@ function Hero() {
             />
           </div>
         </div>
-      </div>
-      <div className="snapElement">
-        <MentorAbout />
       </div>
       <div className="snapElement">
         <IeeeAbout />

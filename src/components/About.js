@@ -4,6 +4,7 @@ import manIcon from "../assets/icons/man.png";
 import bulbIcon from "../assets/icons/bulb.png";
 import missionIcon from "../assets/icons/mission.png";
 import Card from "./Card";
+import MentorAbout from "./MentorAbout";
 
 // Static data that doesn't change during component re-renders
 const description = [
@@ -39,11 +40,11 @@ const About = () => {
         icon={missionIcon}
       />,
     ],
-    [] // Empty dependency array, so it's computed only once during the initial rendering
+    []
   );
   return (
     <>
-      <div className="about" id="about">
+      <div className="about snapElement" id="about">
         <div className="title text-center">
           <header>
             About <span>Us</span>
@@ -53,6 +54,9 @@ const About = () => {
         <div className="cards container-fluid d-flex align-items-center justify-content-evenly flex-wrap">
           {cards}
         </div>
+      </div>
+      <div className="snapElement">
+        <MentorAbout />
       </div>
     </>
   );

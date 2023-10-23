@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Mentors } from "./ImportData";
 import Tilt from "react-parallax-tilt";
 function Mentor({ mentor, index, mentorPlaceholder }) {
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -11,7 +10,7 @@ function Mentor({ mentor, index, mentorPlaceholder }) {
       className="mentorCard rounded d-flex align-items-center flex-column"
     >
       <img
-        src={imgLoaded ? Mentors[index] : mentorPlaceholder}
+        src={imgLoaded ? mentor.imgsrc : mentorPlaceholder}
         alt={mentor.name}
         loading="lazy"
         className="mentorImg rounded w-100 mb-2"
@@ -21,7 +20,7 @@ function Mentor({ mentor, index, mentorPlaceholder }) {
         <div className="mentorDesc">{mentor.description}</div>
       </div>
       <img
-        src={Mentors[index]}
+        src={mentor.imgsrc}
         alt=""
         style={{
           display: "none",

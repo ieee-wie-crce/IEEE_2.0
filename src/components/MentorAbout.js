@@ -3,21 +3,8 @@ import "../css/MentorAbout.css";
 import Mentor from "./Mentor";
 import { Icon } from "@iconify/react";
 import mentorPlaceholder from "../assets/placeholders/mentorPlaceholder.png";
+import { MENTORS } from "./ImportData";
 function MentorAbout() {
-  const mentors = [
-    {
-      name: "Mrs. Sapna Prabhu",
-      description: "IEEE-CRCE Branch Mentor",
-    },
-    {
-      name: "Mrs. Sushma Nagdeote",
-      description: "WIE-CRCE Branch Counsellor",
-    },
-    {
-      name: "Mrs. Swapnali Makdey",
-      description: "IEEE-CRCE Branch Counsellor",
-    },
-  ];
   return (
     <>
       <div className="mentorAbout">
@@ -26,7 +13,7 @@ function MentorAbout() {
         </header>
         <div className="border mb-4" />
         <div className="mentorContainer pb-5">
-          {mentors.map((mentor, index) => (
+          {MENTORS.map((mentor, index) => (
             <Mentor
               key={index}
               mentor={mentor}

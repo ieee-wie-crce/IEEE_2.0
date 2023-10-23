@@ -47,7 +47,7 @@ function Events() {
           ),
     [cardCondition]
   );
-  console.log(filteredData);
+  console.table(filteredData);
   return (
     <div className="events">
       {/* Event title and navigation */}
@@ -68,42 +68,48 @@ function Events() {
       </div>
       {/* Event cards */}
       <div className="cardContent">
-        {filteredData.map((info, key) => (
-          <div
-            key={key}
-            id={`card-${key}`}
-            className="cardDiv d-flex justify-content-center"
-          >
-            {
-              <Tilt className="eventTiltDiv" tiltReverse={true} scale={1.2}>
-                <div className="eventCard">
-                  <div className="eventDiv">
-                    {/* Event image with conditional loading */}
-                    <div className="imgDiv p-2 ">
-                      <img
-                        src={eventImgLoaded ? info.imgsrc : eventPlaceholder}
-                        alt={info.title}
-                        className="img-fluid rounded w-100"
-                        loading="lazy"
-                      />
-                    </div>
-                    {/* Event description */}
-                    <div className="eventContent p-1">
-                      <Icon icon="icons8:idea" /> {info.description}
+        {!filteredData.length && cardCondition === "upcoming" ? (
+          <div className="50vh d-flex justifycontentcenter">
+            Stay Tuned for Upcoming Events!
+          </div>
+        ) : (
+          filteredData.map((info, key) => (
+            <div
+              key={key}
+              id={`card-${key}`}
+              className="cardDiv d-flex justify-content-center"
+            >
+              {
+                <Tilt className="eventTiltDiv" tiltReverse={true} scale={1.2}>
+                  <div className="eventCard">
+                    <div className="eventDiv">
+                      {/* Event image with conditional loading */}
+                      <div className="imgDiv p-2 ">
+                        <img
+                          src={eventImgLoaded ? info.imgsrc : eventPlaceholder}
+                          alt={info.title}
+                          className="img-fluid rounded w-100"
+                          loading="lazy"
+                        />
+                      </div>
+                      {/* Event description */}
+                      <div className="eventContent p-1">
+                        <Icon icon="icons8:idea" /> {info.description}
+                      </div>
                     </div>
                   </div>
-                </div>
-                {/* Hidden image to trigger image load event */}
-                <img
-                  src={info.imgsrc}
-                  alt={info.title}
-                  onLoad={handleImageLoad}
-                  style={{ display: "none" }} // Hide the image element
-                />
-              </Tilt>
-            }
-          </div>
-        ))}
+                  {/* Hidden image to trigger image load event */}
+                  <img
+                    src={info.imgsrc}
+                    alt={info.title}
+                    onLoad={handleImageLoad}
+                    style={{ display: "none" }} // Hide the image element
+                  />
+                </Tilt>
+              }
+            </div>
+          ))
+        )}
       </div>
     </div>
   );
