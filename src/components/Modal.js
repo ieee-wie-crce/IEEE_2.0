@@ -15,7 +15,7 @@ export default function Modal({ form, handleSubmit }) {
             {/* modal heading */}
             <div className="modal-header border-bottom-0">
               <h1 className="modal-title fs-5" id="contactModalLabel">
-                <Icon icon="ion:link" /> Get in Touch
+              <Icon icon="academicons:ieee" /> Get in Touch
               </h1>
               <button
                 type="button"
@@ -33,6 +33,7 @@ export default function Modal({ form, handleSubmit }) {
                   id="from_name"
                   name="from_name"
                   placeholder="Name"
+                  autocomplete="off"
                   required
                 />
                 <label htmlFor="from_name">
@@ -46,6 +47,7 @@ export default function Modal({ form, handleSubmit }) {
                   id="from_email"
                   name="from_email"
                   placeholder="name@example.com"
+                  autocomplete="off"
                   required
                 />
                 <label htmlFor="from_email">
@@ -59,6 +61,7 @@ export default function Modal({ form, handleSubmit }) {
                   id="message"
                   name="message"
                   placeholder="Your Message Here..."
+                  autocomplete="off"
                   minLength={10}
                   required
                 />

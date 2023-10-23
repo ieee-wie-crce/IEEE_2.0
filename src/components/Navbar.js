@@ -69,7 +69,7 @@ function Navbar() {
             data-bs-toggle="modal"
             data-bs-target="#contactModal"
           >
-            <Icon icon="tabler:mail-code" /> Contact
+           <Icon icon="academicons:ieee" /> Contact
           </button>
         </div>
       </nav>

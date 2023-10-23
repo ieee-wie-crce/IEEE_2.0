@@ -15,7 +15,8 @@ function Hero() {
           <source src={bgvideo2} type="video/mp4" />
         </video>
         <span className="reveal-text text-center">
-          <h1 className="mainHeading ">IEEE WIE CRCE</h1>
+         <div className="fs-1"><Icon icon="academicons:ieee" /></div> 
+          <h1 className="mainHeading "> IEEE WIE CRCE</h1>
           <p>
             Coding the Future, One Line at a Time!
             {/* <Icon icon="solar:code-2-outline" /> */}
