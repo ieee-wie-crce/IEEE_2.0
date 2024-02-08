@@ -33,7 +33,7 @@ export default function Modal({ form, handleSubmit }) {
                   id="from_name"
                   name="from_name"
                   placeholder="Name"
-                  autocomplete="off"
+                  autoComplete="off"
                   required
                 />
                 <label htmlFor="from_name">
@@ -47,7 +47,7 @@ export default function Modal({ form, handleSubmit }) {
                   id="from_email"
                   name="from_email"
                   placeholder="name@example.com"
-                  autocomplete="off"
+                  autoComplete="off"
                   required
                 />
                 <label htmlFor="from_email">
@@ -61,7 +61,7 @@ export default function Modal({ form, handleSubmit }) {
                   id="message"
                   name="message"
                   placeholder="Your Message Here..."
-                  autocomplete="off"
+                  autoComplete="off"
                   minLength={10}
                   required
                 />

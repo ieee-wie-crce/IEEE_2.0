@@ -53,6 +53,7 @@ import womensDay23 from "../assets/events/womensDay23.png";
 import technical_paper from "../assets/events/technical_paper.png";
 import PitchDeckPresentation from "../assets/events/PitchDeckPresentation.png";
 import startup_ecosystem from "../assets/events/stratup_ecosystem.png";
+import national_education_day from "../assets/events/national_education_day.png";
 //Mentors
 import sapna from "../assets/TeamMembers/Mentors/sapna.jpg";
 import sushma from "../assets/TeamMembers/Mentors/sushma.jpg";
@@ -355,11 +356,18 @@ const MEMBERS = [
 
 const EVENTS = [
   {
+    title: "National Education Day 2023",
+    imgsrc: national_education_day,
+    description:
+      "Elevate National Education Day with AICTE's enlightening ATAL FDP on 'Applied Machine Learning for VLSI Design' led by the accomplished Dr. Vijay Joshi!",
+    keyword: "ieee",
+  },
+  {
     title: "Ingenium: Igniting Innovation on Engineer's Day",
     imgsrc: ingenium2,
     description:
       "Get ready for a jaw-dropping engineering spectacle at Ingenium, where students' ingenuity ignites a thrilling show of innovation!",
-    keyword: "wie",
+    keyword: "wie,ieee",
   },
   {
     title: "Startup Ecosystem",
@@ -373,14 +381,14 @@ const EVENTS = [
     imgsrc: PitchDeckPresentation,
     description:
       "The event is about a brief presentation which showcases key aspects of your business plan and is used to pitch to investors.",
-    keyword: "",
+    keyword: "ieee",
   },
   {
     title: "Prakalp: Project Competition",
     imgsrc: prakalp,
     description:
       "A National level project competition which involves the hardware and software domain",
-    keyword: "wie",
+    keyword: "wie,ieee",
   },
 
   {
@@ -388,7 +396,7 @@ const EVENTS = [
     imgsrc: womensDay23,
     description:
       "Celebrated International Women's Day with Mental Health Awareness Session.",
-    keyword: "wie",
+    keyword: "ieee,wie",
   },
 
   {
@@ -403,14 +411,14 @@ const EVENTS = [
     imgsrc: ai,
     description:
       "Mr Uday Kamath, an alumni of FRCRCE gave insights in the world of AI",
-    keyword: "",
+    keyword: "ieee",
   },
   {
     title: "Laser Maze",
     imgsrc: lasermaze,
     description:
       "IEEE council organized Laser Maze game for Synergy Fest 2k22.",
-    keyword: "",
+    keyword: "ieee",
   },
   {
     title: "CRCE TRANSYLVANIA",
@@ -424,7 +432,7 @@ const EVENTS = [
     imgsrc: IVTeachers,
     description:
       "IEEE in association with AI & DS Department organized a visit to SICK INDIA PVT LTD at Naigaon",
-    keyword: "",
+    keyword: "ieee",
   },
   {
     title: "Women Leaders in Startup",
@@ -438,28 +446,28 @@ const EVENTS = [
     imgsrc: ingenium,
     description:
       "A problem statement and creative solutions bought up by the students.",
-    keyword: "",
+    keyword: "ieee,wie",
   },
   {
     title: "Writing Research Paper and Patent Application",
     imgsrc: research,
     description:
       "Students got important insights from our Principal Sir and his student-Jenil Dave.",
-    keyword: "",
+    keyword: "ieee",
   },
   {
     title: "Succesful Startup Founders",
     imgsrc: entraprenuer,
     description:
       "Meet alumni of our college, Mr.Mohamad Ahmed; founder of Hridam Surgicals.",
-    keyword: "",
+    keyword: "ieee",
   },
   {
     title: "Women's Day Celebration 2022",
     imgsrc: womensDay,
     description:
       "First offline event after the pandemic to celebrate International Women's Day.",
-    keyword: "wie",
+    keyword: "ieee,wie",
   },
   {
     title: "Web Designing Workshop",
@@ -480,28 +488,28 @@ const EVENTS = [
     imgsrc: industry,
     description:
       "A session to enlighten students about the industrial trends and the demands that people make from the Industry and how those can be fulfilled.",
-    keyword: "",
+    keyword: "ieee",
   },
   {
     title: "Goal Achievement Program",
     imgsrc: goal_achievement,
     description:
       "A session exclusively for Fr. CRCE teachers on achieving goals.",
-    keyword: "",
+    keyword: "ieee",
   },
   {
     title: "Succesful Start-Up Founders",
     imgsrc: start_up,
     description:
       "A webinar for students to gain knowledge about the skills required for entrepreneurship.",
-    keyword: "",
+    keyword: "ieee",
   },
   {
     title: "Technical Paper Webinar",
     imgsrc: technical_paper,
     description:
       "Webinar for the students to learn about the selection of a topic and how to write a technical paper.",
-    keyword: "",
+    keyword: "ieee",
   },
 ];
 const MENTORS = [

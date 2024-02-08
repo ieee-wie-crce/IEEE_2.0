@@ -21,8 +21,8 @@ function Events() {
     ele.target.classList.add("is-active");
 
     setCardCondition(
-      ele.target.classList.contains("upcoming")
-        ? "upcoming"
+      ele.target.classList.contains("ieee")
+        ? "ieee"
         : ele.target.classList.contains("wie")
         ? "wie"
         : "all"
@@ -47,7 +47,7 @@ function Events() {
           ),
     [cardCondition]
   );
-  console.table(filteredData);
+  // console.table(filteredData);
   return (
     <div className="events">
       {/* Event title and navigation */}
@@ -59,8 +59,8 @@ function Events() {
         <Link className="tab all is-active" onClick={handleActive}>
           <Icon icon="material-symbols:select-all-rounded" /> All
         </Link>
-        <Link className="tab upcoming" onClick={handleActive}>
-          <Icon icon="material-symbols:upcoming-outline" /> Upcoming
+        <Link className="tab ieee" onClick={handleActive}>
+          <Icon icon="material-symbols:upcoming-outline" /> IEEE
         </Link>
         <Link className="tab wie" onClick={handleActive}>
           <Icon icon="solar:women-broken" /> WIE
@@ -68,7 +68,7 @@ function Events() {
       </div>
       {/* Event cards */}
       <div className="cardContent">
-        {!filteredData.length && cardCondition === "upcoming" ? (
+        {!filteredData.length && cardCondition === "ieee" ? (
           <div className="50vh d-flex justifycontentcenter">
             Stay Tuned for Upcoming Events!
           </div>
