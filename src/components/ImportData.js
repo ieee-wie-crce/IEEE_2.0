@@ -58,10 +58,6 @@ import national_education_day from "../assets/events/national_education_day.png"
 import sapna from "../assets/TeamMembers/Mentors/sapna.jpg";
 import sushma from "../assets/TeamMembers/Mentors/sushma.jpg";
 import swapnali from "../assets/TeamMembers/Mentors/swapnali.jpg";
-//Logos
-import ieeeIcon from "../assets/logos/ieeeIcon.svg";
-import wieIcon from "../assets/logos/wieIcon.svg";
-import ieeeWieCombinedIcon from "../assets/logos/ieee-wie-logo.png";
 
 // Trying to import all the images dynamically!
 // function importAllImages(MEMBERS) {
@@ -533,19 +529,4 @@ const MENTORS = [
     imgsrc: swapnali,
   },
 ];
-
-const EVENTTABS =[
-  {
-    class: "all",
-    logo: ieeeWieCombinedIcon,
-  },
-  {
-    class: "ieee",
-    logo: ieeeIcon,
-  },
-  {
-    class: "wie",
-    logo: wieIcon,
-  },
-];
-export { MENTORS, EVENTS, MEMBERS,EVENTTABS };
+export { MENTORS, EVENTS, MEMBERS };

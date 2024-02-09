@@ -14,7 +14,11 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
+<<<<<<< HEAD
   "/IEEE_2.0/precache-manifest.9d8ae89d197bda41d603fb4494c74b6e.js"
+=======
+  "/precache-manifest.ca636b9e98ff59db421e3e69b7dadde8.js"
+>>>>>>> parent of e44ccd1 (Added Contact details in Modal, made a few changes in the events tab)
 );
 
 workbox.clientsClaim();
