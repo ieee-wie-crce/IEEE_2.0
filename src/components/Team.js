@@ -59,7 +59,7 @@ function Team() {
           <div className="title">
             {/* Handle click on WIE team tab */}
             <Link className="teamLink WIE" onClick={handleTeamTabBtn}>
-              <img src={wieIcon} alt="ieeeIcon" />
+              <img src={wieIcon} alt="wieIcon" />
             </Link>
           </div>
         </div>
