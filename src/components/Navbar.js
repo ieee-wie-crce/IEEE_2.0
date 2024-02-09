@@ -10,15 +10,27 @@ function Navbar() {
       let toggler = document.querySelector(".navLinks").style;
       toggler.height = toggler.height === "auto" ? 0 : "auto";
       toggler.overflow = toggler.overflow === "hidden" ? "none" : "hidden";
-      document.querySelector(".navLinks").classList.toggle("p-3")
+      document.querySelector(".navLinks").classList.toggle("p-3");
     }
   };
 
   // Memoized NavLink component
   const MemoNavLink = React.memo(({ to, icon, text, onClick }) => {
     return (
-      <NavLink className="navLink text-white" to={to} onClick={onClick}>
-        <Icon icon={icon} /> {text}
+      <NavLink
+        className="navLink text-white d-flex align-content-center"
+        to={to}
+        onClick={onClick}
+      >
+        <lord-icon
+          src={"https://cdn.lordicon.com/" + icon + ".json"}
+          trigger="hover"
+          delay="2000"
+          colors="primary:#ffffff"
+          style={{ width: "25px", height: "25px" }}
+        ></lord-icon>
+        &nbsp;
+        {text}
       </NavLink>
     );
   });
@@ -26,12 +38,21 @@ function Navbar() {
   // Memoized navigation links
   const navLinks = useMemo(() => {
     return [
-      { to: "/about", icon: "mdi:about-circle-outline", text: "About" },
-      { to: "/events", icon: "carbon:event", text: "Events" },
-      { to: "/team", icon: "fluent:people-team-16-regular", text: "Team" },
+      {
+        to: "/about",
+        icon: "yxczfiyc",
+        text: "About",
+      },
+      { to: "/events", icon: "abfverha", text: "Events" },
+      { to: "/team", icon: "vyqvtrtg", text: "Team" },
+      {
+        to: "/contact",
+        icon: "rsvfayfn",
+        text: "Contact",
+      },
     ];
   }, []);
-  
+
   return (
     <>
       {/* Navigation bar */}
@@ -49,7 +70,9 @@ function Navbar() {
             onClick={handleToggle}
             type="button"
           >
-            <span><Icon icon="line-md:menu" /></span>
+            <span>
+              <Icon icon="line-md:menu" />
+            </span>
           </button>
         </div>
         {/* Navigation links */}
@@ -63,14 +86,6 @@ function Navbar() {
               onClick={handleToggle}
             />
           ))}
-          <button
-            type="button"
-            className="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#contactModal"
-          >
-           <Icon icon="academicons:ieee" /> Contact
-          </button>
         </div>
       </nav>
     </>
