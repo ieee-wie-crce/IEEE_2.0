@@ -46,10 +46,12 @@ video {
 
 .mainHeading {
   font-size: 150px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .mainHeading ~ p {
   font-size: 40px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .reveal-text {

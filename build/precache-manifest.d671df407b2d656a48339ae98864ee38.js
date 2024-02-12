@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "35ed028d6832aa851684",
-    "url": "/static/js/0.8196e470.chunk.js"
+    "revision": "3f5b006303ef090cc8de",
+    "url": "/static/js/0.9631475f.chunk.js"
   },
   {
-    "revision": "43db37e3377f2d6baca2",
-    "url": "/static/css/main.a91780b6.chunk.css"
+    "revision": "acb92c7a3399a208b35a",
+    "url": "/static/css/main.5ccf17e5.chunk.css"
   },
   {
-    "revision": "43db37e3377f2d6baca2",
+    "revision": "acb92c7a3399a208b35a",
     "url": "/static/js/main.c8802cbb.chunk.js"
   },
   {
-    "revision": "50ac4c1711fb9bbb1078",
-    "url": "/static/js/runtime~main.25e0ad06.js"
+    "revision": "c345e3a35c50171cc95b",
+    "url": "/static/js/runtime~main.23aa31e6.js"
   },
   {
     "revision": "155f3457b66165fbcf6c",
@@ -28,11 +28,11 @@ self.__precacheManifest = [
     "url": "/static/js/4.031f5dec.chunk.js"
   },
   {
-    "revision": "aa3632dbb69d15a25e2a",
-    "url": "/static/css/5.f43de6a8.chunk.css"
+    "revision": "f3e72c3a67ce15e772de",
+    "url": "/static/css/5.8849a3b6.chunk.css"
   },
   {
-    "revision": "aa3632dbb69d15a25e2a",
+    "revision": "f3e72c3a67ce15e772de",
     "url": "/static/js/5.61091877.chunk.js"
   },
   {
@@ -44,12 +44,12 @@ self.__precacheManifest = [
     "url": "/static/js/6.84c05a13.chunk.js"
   },
   {
-    "revision": "b55e629b8582d0569699",
+    "revision": "b3ad13da8a91f78db8b7",
     "url": "/static/css/7.9e879207.chunk.css"
   },
   {
-    "revision": "b55e629b8582d0569699",
-    "url": "/static/js/7.1de9780a.chunk.js"
+    "revision": "b3ad13da8a91f78db8b7",
+    "url": "/static/js/7.3d34f592.chunk.js"
   },
   {
     "revision": "b10ca5f31764a2f8077f",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "url": "/static/media/ieee-wie-logo.18490708.png"
   },
   {
-    "revision": "af7dab10e7329f0d79dca50c0193744b",
-    "url": "/static/media/techVista.af7dab10.png"
+    "revision": "163e78372651c4bdb17695d581971111",
+    "url": "/static/media/techVista.163e7837.png"
   },
   {
     "revision": "4cdb6221e6c8a22743a4c627a837f922",
@@ -348,7 +348,7 @@ self.__precacheManifest = [
     "url": "/static/media/swapnali.9df22b64.jpg"
   },
   {
-    "revision": "8df91ba1062eff309ee3a0e3d46ead1d",
+    "revision": "9879d6ea8e581ff11dbfdb724c0d9643",
     "url": "/index.html"
   }
 ];
