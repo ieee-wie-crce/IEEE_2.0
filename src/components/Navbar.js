@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import ieeeLogo from "../assets/logos/ieee-wie-logo.png";
 import "../css/Navbar.css";
+import LordIcon from "./LordIcon";
 function Navbar() {
   // Memoized handleToggle function
   const handleToggle = () => {
@@ -22,13 +23,7 @@ function Navbar() {
         to={to}
         onClick={onClick}
       >
-        <lord-icon
-          src={"https://cdn.lordicon.com/" + icon + ".json"}
-          trigger="hover"
-          delay="2000"
-          colors="primary:#ffffff"
-          style={{ width: "25px", height: "25px" }}
-        ></lord-icon>
+        <LordIcon icon={icon} w={25} h={25} />
         &nbsp;
         {text}
       </NavLink>

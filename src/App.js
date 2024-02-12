@@ -16,6 +16,7 @@ function App() {
     `%c${process.env.REACT_APP_SECRET_MESSAGE}`,
     "color: #00a67d; font-weight:bold"
   );
+  const showCard = localStorage.getItem("cardDismissed");
   return (
     <>
       <Router>
@@ -36,15 +37,15 @@ function App() {
           }
         >
           <Routes>
-            <Route path="/" exact Component={Hero} />
-            <Route path="/about" exact Component={About} />
-            <Route path="/events" exact Component={Events} />
-            <Route path="/team" exact Component={Team} />
-            <Route path="/contact" exact Component={Contact} />
-            <Route path="*" Component={Error} />
+            <Route path="/" exact element={<Hero />} />
+            <Route path="/about" exact element={<About />} />
+            <Route path="/events" exact element={<Events />} />
+            <Route path="/team" exact element={<Team />} />
+            <Route path="/contact" exact element={<Contact />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </Suspense>
-        <HoverCard />
+        {!showCard && <HoverCard />}
       </Router>
     </>
   );

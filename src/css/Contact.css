@@ -8,13 +8,17 @@
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
 }
-
+.contentSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .title > header {
   color: #fff;
   font-size: 2.5rem;
 }
 
-.contact_details, .contact_form {
+.contact_details, .contact_form, .collegeLocation {
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 10px;
@@ -22,6 +26,7 @@
 .collegeLocation{
   display: flex;
   justify-content: center;
+  width: 90%;
 }
 iframe{
     width: 90vw;
@@ -30,14 +35,16 @@ iframe{
 /* For Desktops */
 @media only screen and (min-width: 768px) {
  .contentSection{
-  display: flex;
   flex-direction: row;
+  align-items: flex-start
  }
  iframe{
   position: relative;
-
   width: 35vw;
   height: 70vh;
+ }
+ .collegeLocation{
+  width: auto;
  }
  .left_side{
   width: 60%;

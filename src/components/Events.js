@@ -47,7 +47,7 @@ function Events() {
       <div className="eventTitle">
         <Icon icon="tabler:timeline-event" /> {document.title}
       </div>
-      <div className="border" />
+      <hr className="mx-5" />
 
       <div className="navigation d-flex justify-content-center container">
         {tabs.map((tab, index) => (

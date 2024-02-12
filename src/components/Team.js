@@ -41,10 +41,9 @@ function Team() {
       <div className="team">
         {/* Display the main title */}
         <div className="mainTitle">
-          <Icon icon="fluent:people-team-48-filled" /> OUR{" "}
-          <span style={{ color: "#0d6efd6e" }}>TEAM</span>
+          <Icon icon="fluent:people-team-48-filled" /> OUR TEAM
         </div>
-        <div className="border" />
+        <hr className="mx-5 " />
         {/* Display the team tab buttons */}
         <div className="titleContainer py-4">
           <div className="title">
@@ -59,7 +58,7 @@ function Team() {
           <div className="title">
             {/* Handle click on WIE team tab */}
             <Link className="teamLink WIE" onClick={handleTeamTabBtn}>
-              <img src={wieIcon} alt="ieeeIcon" />
+              <img src={wieIcon} alt="wieIcon" />
             </Link>
           </div>
         </div>
@@ -69,7 +68,7 @@ function Team() {
             <TeamMember
               key={index}
               member={member}
-              Tilt = {Tilt}
+              Tilt={Tilt}
               Icon={Icon}
               index={index}
               imageLoaded={imageLoaded}

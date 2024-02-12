@@ -1,13 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "../css/Contact.css";
 import emailjs from "@emailjs/browser";
 import { Icon } from "@iconify/react";
 export default function Contact() {
   const form = useRef();
+  const [formValue, setFormValue] = useState({
+    from_name: "",
+    from_email: "",
+    message: "",
+  });
+  const changeHandler = (e) => {
+    setFormValue({ ...formValue, [e.target.name]: e.target.value });
+  };
   const handleSubmit = (e) => {
     let sendBtn = e.target[3];
     e.preventDefault();
-    console.log(e);
     sendBtn.innerText = "Sending..";
     emailjs
       .sendForm(
@@ -18,10 +25,16 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result);
           sendBtn.classList.add("btn-success");
           sendBtn.innerHTML = "Sent!";
           sendBtn.disabled = true;
+
+          // Reset form values after successful submission
+          setFormValue({
+            from_name: "",
+            from_email: "",
+            message: "",
+          });
         },
         (error) => {
           console.log(error);
@@ -34,8 +47,9 @@ export default function Contact() {
     <>
       <div className="contact-page">
         <div className="title">
-          <header>
-            <Icon icon="bitcoin-icons:node-2-connections-outline" /> Contact
+          <header className="d-flex justify-content-center align-items-center">
+            <Icon icon="bitcoin-icons:node-2-connections-outline" />
+            &nbsp;Contact
           </header>
           <hr className="text-white h-100" />
         </div>
@@ -52,6 +66,8 @@ export default function Contact() {
                     name="from_name"
                     placeholder="Name"
                     autoComplete="off"
+                    value={formValue.from_name}
+                    onChange={changeHandler}
                     required
                   />
                   <label htmlFor="from_name">
@@ -66,6 +82,8 @@ export default function Contact() {
                     name="from_email"
                     placeholder="name@example.com"
                     autoComplete="off"
+                    value={formValue.from_email}
+                    onChange={changeHandler}
                     required
                   />
                   <label htmlFor="from_email">
@@ -81,6 +99,8 @@ export default function Contact() {
                     placeholder="Your Message Here..."
                     autoComplete="off"
                     minLength={10}
+                    value={formValue.message}
+                    onChange={changeHandler}
                     required
                   />
                   <label htmlFor="message">
@@ -98,7 +118,7 @@ export default function Contact() {
               <h3>
                 <Icon icon="tabler:message-bolt" /> Contact Details
               </h3>
-              <br />
+              <hr />
               <p>
                 <Icon icon="mdi:super-chat-for-good" /> Thanks a bunch for
                 checking out IEEE-WIE-CRCE! Feel free to reach out to us via
@@ -138,7 +158,7 @@ export default function Contact() {
               </p>
             </div>
           </div>
-          <div className="collegeLocation">
+          <div className="collegeLocation p-3">
             <iframe
               title="College Location"
               src="https://shorturl.at/moGH4"

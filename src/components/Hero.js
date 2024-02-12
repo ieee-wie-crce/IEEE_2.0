@@ -6,7 +6,7 @@ import IeeeAbout from "./IeeeAbout";
 import "../css/Hero.css";
 import WieAbout from "./WieAbout";
 // Hero component
-function Hero() {
+function Hero(props) {
   document.title = "IEEE WIE CRCE";
   return (
     <>
@@ -19,6 +19,7 @@ function Hero() {
             <Icon icon="academicons:ieee" />
           </div>
           <h1 className="mainHeading "> IEEE WIE CRCE</h1>
+          <p>{props.text}</p>
           <p className="d-flex justify-content-center align-items-center">
             Coding the Future, One Line at a Time!
           </p>
