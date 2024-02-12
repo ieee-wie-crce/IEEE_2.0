@@ -8,6 +8,7 @@ const About = React.lazy(() => import("./components/About"));
 const Contact = React.lazy(() => import("./components/Contact"));
 const Events = React.lazy(() => import("./components/Events"));
 const Team = React.lazy(() => import("./components/Team"));
+const HoverCard = React.lazy(() => import("./components/HoverCard"));
 const Error = React.lazy(() => import("./components/Error"));
 // const Modal = React.lazy(() => import("./components/Modal"));
 function App() {
@@ -39,15 +40,11 @@ function App() {
             <Route path="/about" exact Component={About} />
             <Route path="/events" exact Component={Events} />
             <Route path="/team" exact Component={Team} />
-            <Route
-              path="/contact"
-              exact
-              Component={Contact}
-            />
+            <Route path="/contact" exact Component={Contact} />
             <Route path="*" Component={Error} />
           </Routes>
         </Suspense>
-        {/* <Modal form={form} handleSubmit={handleSubmit} /> */}
+        <HoverCard />
       </Router>
     </>
   );

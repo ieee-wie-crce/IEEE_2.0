@@ -1,0 +1,31 @@
+.hoverCard {
+  width:40%
+}
+.hoverCloseBtn {
+  color: white;
+  top: 5%;
+  right: 5%;
+}
+.hoverCloseBtn:hover{
+    cursor: pointer;
+}
+
+.registerBtn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* For Tablets */
+@media only screen and (min-width: 768px) {
+  .hoverCard {
+    width:30%
+  }
+}
+/* For Desktop */
+@media only screen and (min-width: 1024px) {
+  .hoverCard {
+    width:15%
+  }
+}
