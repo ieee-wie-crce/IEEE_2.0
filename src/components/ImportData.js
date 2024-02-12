@@ -54,6 +54,7 @@ import technical_paper from "../assets/events/technical_paper.png";
 import PitchDeckPresentation from "../assets/events/PitchDeckPresentation.png";
 import startup_ecosystem from "../assets/events/stratup_ecosystem.png";
 import national_education_day from "../assets/events/national_education_day.png";
+import techVista from "../assets/events/techVista.png";
 //Mentors
 import sapna from "../assets/TeamMembers/Mentors/sapna.jpg";
 import sushma from "../assets/TeamMembers/Mentors/sushma.jpg";
@@ -360,6 +361,14 @@ const MEMBERS = [
 
 const EVENTS = [
   {
+    title: "Tech-Vista 2024",
+    imgsrc: techVista,
+    description:
+      "Tech-Vista 2024: Elevate your tech journey with Placement Talks by Vivek Gupta, ICPC World Finalist, and an exhilarating Data Structure and Algorithm contest!",
+    keyword: "ieee",
+    ongoingLink: "https://algozenithcrce.vercel.app/register",
+  },
+  {
     title: "National Education Day 2023",
     imgsrc: national_education_day,
     description:
@@ -534,7 +543,7 @@ const MENTORS = [
   },
 ];
 
-const EVENTTABS =[
+const EVENTTABS = [
   {
     class: "all",
     logo: ieeeWieCombinedIcon,
@@ -548,4 +557,4 @@ const EVENTTABS =[
     logo: wieIcon,
   },
 ];
-export { MENTORS, EVENTS, MEMBERS,EVENTTABS };
+export { MENTORS, EVENTS, MEMBERS, EVENTTABS };

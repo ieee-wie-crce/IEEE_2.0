@@ -5,7 +5,6 @@ import { Icon } from "@iconify/react";
 import IeeeAbout from "./IeeeAbout";
 import "../css/Hero.css";
 import WieAbout from "./WieAbout";
-import LordIcon from "./LordIcon";
 // Hero component
 function Hero() {
   document.title = "IEEE WIE CRCE";
@@ -22,7 +21,6 @@ function Hero() {
           <h1 className="mainHeading "> IEEE WIE CRCE</h1>
           <p className="d-flex justify-content-center align-items-center">
             Coding the Future, One Line at a Time!
-            <LordIcon icon={"lzgmgrnn"} w={50} h={50} />
           </p>
         </span>
         <div className="content mx-3">

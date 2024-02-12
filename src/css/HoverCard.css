@@ -3,6 +3,7 @@
 }
 .hoverCloseBtn {
   color: white;
+  scale: 1.5;
   top: 5%;
   right: 5%;
 }

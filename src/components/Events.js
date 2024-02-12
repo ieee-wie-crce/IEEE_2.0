@@ -92,6 +92,15 @@ function Events() {
                 loading="lazy"
               />
             </div>
+            {/* Button for Ongoing Events */}
+            {info.ongoingLink ? (
+              <a href={info.ongoingLink}>
+                <button className="btn btn-primary position-absolute registerBtn rounded-end-pill">
+                  Register{" "}
+                  <Icon icon="line-md:arrow-right" style={{ color: "white" }} />
+                </button>
+              </a>
+            ) : null}
             {/* Event description */}
             <div className="eventContent p-1">
               <Icon icon="icons8:idea" /> {info.description}
