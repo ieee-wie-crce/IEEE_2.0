@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function LordIcon({ icon, w, h, trigger,delay }) {
+function LordIcon({ icon, w, h, trigger, delay }) {
   return (
     <lord-icon
       src={"https://cdn.lordicon.com/" + icon + ".json"}
@@ -16,5 +16,6 @@ LordIcon.defaultProps = {
   w: "25px",
   h: "25px",
   trigger: "hover",
-  delay:false
+  delay: false,
 };
+export default React.memo(LordIcon);
