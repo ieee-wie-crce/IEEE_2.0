@@ -95,11 +95,13 @@ const Contact = () => {
           </div>
         </div>
         <hr />
-        <p>Developed with ❤ by IEEE-WIE Team!</p>
-        <p>
-          Copyright <Icon icon="ic:twotone-copyright" />
-          {new Date().getFullYear()}. All Rights Reserved.
-        </p>
+        <div className="contact_footer">
+          <p>Developed with ❤ by IEEE-WIE Team!</p>
+          <p>
+            Copyright <Icon icon="ic:twotone-copyright" />
+            {new Date().getFullYear()}. All Rights Reserved.
+          </p>
+        </div>
       </div>
     </>
   );

@@ -55,6 +55,7 @@ import PitchDeckPresentation from "../assets/events/PitchDeckPresentation.png";
 import startup_ecosystem from "../assets/events/stratup_ecosystem.png";
 import national_education_day from "../assets/events/national_education_day.png";
 import techVista from "../assets/events/techVista.png";
+import peerPong from "../assets/events/peerpong.png";
 //Mentors
 import sapna from "../assets/TeamMembers/Mentors/sapna.jpg";
 import sushma from "../assets/TeamMembers/Mentors/sushma.jpg";
@@ -367,6 +368,14 @@ const EVENTS = [
       "Tech-Vista 2024: Elevate your tech journey with Placement Talks by Vivek Gupta, ICPC World Finalist, and an exhilarating Data Structure and Algorithm contest!",
     keyword: "ieee",
     ongoingLink: "https://algozenithcrce.vercel.app/register",
+  },
+  {
+    title: "Peer Pong",
+    imgsrc: peerPong,
+    description:
+      "Dive into the thrill of tech and Ping Pong at CRESCENDO's Peer Pong by Women In Engineering! Score points with precision, conquer tasks, and compete for exciting prizes.",
+    keyword: "wie",
+    ongoingLink: "https://shorturl.at/eNR04",
   },
   {
     title: "National Education Day 2023",
