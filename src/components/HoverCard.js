@@ -1,9 +1,8 @@
 import React, { useCallback } from "react";
-import cardImg from "../assets/events/techVista.png";
 import { Icon } from "@iconify/react";
 import "../css/HoverCard.css";
 
-const HoverCard = () => {
+const HoverCard = (props) => {
   const dismissHoverCard = useCallback(() => {
     const hoverCard = document.querySelector(".hoverCard");
     if (hoverCard) {
@@ -20,11 +19,11 @@ const HoverCard = () => {
         onClick={dismissHoverCard}
       />
       <img
-        src={cardImg}
+        src={props.eventImg}
         alt="Event"
         className="img-fluid rounded-3 img-thumbnail"
       />
-      <a href="https://algozenithcrce.vercel.app/register">
+      <a href={props.registrationLink}>
         <button className="btn btn-primary position-absolute registerBtn rounded-end-pill">
           Register{" "}
           <Icon icon="line-md:arrow-right" style={{ color: "white" }} />

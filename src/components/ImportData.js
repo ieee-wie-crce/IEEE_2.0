@@ -56,6 +56,7 @@ import startup_ecosystem from "../assets/events/stratup_ecosystem.png";
 import national_education_day from "../assets/events/national_education_day.png";
 import techVista from "../assets/events/techVista.png";
 import peerPong from "../assets/events/peerpong.png";
+import dareToRace from "../assets/events/dareToRace.png";
 //Mentors
 import sapna from "../assets/TeamMembers/Mentors/sapna.jpg";
 import sushma from "../assets/TeamMembers/Mentors/sushma.jpg";
@@ -362,12 +363,13 @@ const MEMBERS = [
 
 const EVENTS = [
   {
-    title: "Tech-Vista 2024",
-    imgsrc: techVista,
+    title: "Dare To Race",
+    imgsrc: dareToRace,
     description:
-      "Tech-Vista 2024: Elevate your tech journey with Placement Talks by Vivek Gupta, ICPC World Finalist, and an exhilarating Data Structure and Algorithm contest!",
+      "Gear up your creativity and ignite your passion for speed at CRESCENDO 2024's 'Dare to Race' - where engineering prowess meets the thrill of the track!",
     keyword: "ieee",
-    ongoingLink: "https://algozenithcrce.vercel.app/register",
+    ongoingLink: "https://shorturl.at/tvBEK",
+
   },
   {
     title: "Peer Pong",
@@ -375,8 +377,16 @@ const EVENTS = [
     description:
       "Dive into the thrill of tech and Ping Pong at CRESCENDO's Peer Pong by Women In Engineering! Score points with precision, conquer tasks, and compete for exciting prizes.",
     keyword: "wie",
-    ongoingLink: "https://shorturl.at/eNR04",
+    ongoingLink: "https://docs.google.com/forms/d/e/1FAIpQLSeKcyeP13o6dEb9JNs2ruFyEP5Gvbf_T05iVKqUnEDlkoGYGQ/viewform"
   },
+  {
+    title: "Tech-Vista 2024",
+    imgsrc: techVista,
+    description:
+      "Tech-Vista 2024: Elevate your tech journey with Placement Talks by Vivek Gupta, ICPC World Finalist, and an exhilarating Data Structure and Algorithm contest!",
+    keyword: "ieee",
+  },
+ 
   {
     title: "National Education Day 2023",
     imgsrc: national_education_day,
