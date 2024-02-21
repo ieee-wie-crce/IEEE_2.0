@@ -368,7 +368,6 @@ const EVENTS = [
     description:
       "Gear up your creativity and ignite your passion for speed at CRESCENDO 2024's 'Dare to Race' - where engineering prowess meets the thrill of the track!",
     keyword: "ieee",
-    ongoingLink: "https://shorturl.at/tvBEK",
 
   },
   {
@@ -377,7 +376,6 @@ const EVENTS = [
     description:
       "Dive into the thrill of tech and Ping Pong at CRESCENDO's Peer Pong by Women In Engineering! Score points with precision, conquer tasks, and compete for exciting prizes.",
     keyword: "wie",
-    ongoingLink: "https://docs.google.com/forms/d/e/1FAIpQLSeKcyeP13o6dEb9JNs2ruFyEP5Gvbf_T05iVKqUnEDlkoGYGQ/viewform"
   },
   {
     title: "Tech-Vista 2024",
