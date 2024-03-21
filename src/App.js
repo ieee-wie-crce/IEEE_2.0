@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { TailSpin } from "react-loader-spinner";
 import "./App.css";
-import dareToRace from "./assets/events/dareToRace.png";
+import prakalp2 from "./assets/events/prakalp2k24.jpg";
 const Hero = React.lazy(() => import("./components/Hero"));
 const About = React.lazy(() => import("./components/About"));
 const Contact = React.lazy(() => import("./components/Contact"));
@@ -46,12 +46,12 @@ function App() {
             <Route path="*" element={<Error />} />
           </Routes>
         </Suspense>
-        {/* {!showCard && (
+        {!showCard && (
           <HoverCard
-            eventImg={dareToRace}
-            registrationLink={"https://shorturl.at/tvBEK"}
+            eventImg={prakalp2}
+            registrationLink={null}
           />
-        )} */}
+        )}
       </Router>
     </>
   );

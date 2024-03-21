@@ -1,91 +1,91 @@
 self.__precacheManifest = [
   {
-    "revision": "87e7269dff92234d4e0f",
-    "url": "/static/js/0.e7c99b3d.chunk.js"
+    "revision": "62fe43fe74e5ecda7c6c",
+    "url": "/static/js/0.11719b52.chunk.js"
   },
   {
-    "revision": "30fb81a7091f591c961c",
+    "revision": "9736482ec0145f5a52f6",
     "url": "/static/css/main.5ccf17e5.chunk.css"
   },
   {
-    "revision": "30fb81a7091f591c961c",
-    "url": "/static/js/main.55a98e7f.chunk.js"
+    "revision": "9736482ec0145f5a52f6",
+    "url": "/static/js/main.81a0d780.chunk.js"
   },
   {
-    "revision": "77e7d361e487fec9f158",
-    "url": "/static/js/runtime~main.bb1eb5bc.js"
+    "revision": "c654a4fa43e2975a8085",
+    "url": "/static/js/runtime~main.fbb368c6.js"
   },
   {
-    "revision": "74f842959e601d98438a",
-    "url": "/static/js/3.ac3641a8.chunk.js"
+    "revision": "fc66079b8b308eea0517",
+    "url": "/static/js/3.1fbdceba.chunk.js"
   },
   {
-    "revision": "04667fdf23bc4fb812b6",
+    "revision": "cd224f461af2c714e2a9",
     "url": "/static/css/4.e39c4a67.chunk.css"
   },
   {
-    "revision": "04667fdf23bc4fb812b6",
-    "url": "/static/js/4.d67412aa.chunk.js"
+    "revision": "cd224f461af2c714e2a9",
+    "url": "/static/js/4.e24717db.chunk.js"
   },
   {
-    "revision": "1eb0b48c4e0059d9e322",
+    "revision": "6372013ecc901f286e66",
     "url": "/static/css/5.f091aeca.chunk.css"
   },
   {
-    "revision": "1eb0b48c4e0059d9e322",
-    "url": "/static/js/5.86af4cf4.chunk.js"
+    "revision": "6372013ecc901f286e66",
+    "url": "/static/js/5.1e6e0ea5.chunk.js"
   },
   {
-    "revision": "14a9e2367195353e2f8e",
+    "revision": "896e3e530174d7510fc9",
     "url": "/static/css/6.5ea4dee4.chunk.css"
   },
   {
-    "revision": "14a9e2367195353e2f8e",
-    "url": "/static/js/6.02b301ce.chunk.js"
+    "revision": "896e3e530174d7510fc9",
+    "url": "/static/js/6.65ac3801.chunk.js"
   },
   {
-    "revision": "66a34a5572c174f1d6e4",
+    "revision": "3d1ac7a8e4adc0f7b1a5",
     "url": "/static/css/7.bb4cd987.chunk.css"
   },
   {
-    "revision": "66a34a5572c174f1d6e4",
-    "url": "/static/js/7.d685ff52.chunk.js"
+    "revision": "3d1ac7a8e4adc0f7b1a5",
+    "url": "/static/js/7.227e6794.chunk.js"
   },
   {
-    "revision": "5ed418afffe041a23cd0",
+    "revision": "94a1df2a4c06be0de720",
     "url": "/static/css/8.8f0f674a.chunk.css"
   },
   {
-    "revision": "5ed418afffe041a23cd0",
-    "url": "/static/js/8.c5b28099.chunk.js"
+    "revision": "94a1df2a4c06be0de720",
+    "url": "/static/js/8.7cd6d3e2.chunk.js"
   },
   {
-    "revision": "4963ee05ebc12eb931be",
+    "revision": "761973b971ac75b38bcf",
     "url": "/static/css/9.9e879207.chunk.css"
   },
   {
-    "revision": "4963ee05ebc12eb931be",
-    "url": "/static/js/9.610e1624.chunk.js"
+    "revision": "761973b971ac75b38bcf",
+    "url": "/static/js/9.a14d85ac.chunk.js"
   },
   {
-    "revision": "2210796478f58ca7c063",
-    "url": "/static/js/10.2bd453a1.chunk.js"
+    "revision": "c255077b1e31677ee63e",
+    "url": "/static/js/10.efe8cc16.chunk.js"
   },
   {
-    "revision": "a94c0c88e5bb847164f4",
-    "url": "/static/js/11.c7444f32.chunk.js"
+    "revision": "8bfbab26bc416d3b9b44",
+    "url": "/static/js/11.b519fa38.chunk.js"
   },
   {
-    "revision": "54c785c75178fad966c2",
-    "url": "/static/js/12.75fd0811.chunk.js"
+    "revision": "018c19253e536a91aaa2",
+    "url": "/static/js/12.9c718dae.chunk.js"
   },
   {
     "revision": "18490708ec9f75be42e924e1e1363f4d",
     "url": "/static/media/ieee-wie-logo.18490708.png"
   },
   {
-    "revision": "12b79eb63624ef975e7cc21554644dea",
-    "url": "/static/media/dareToRace.12b79eb6.png"
+    "revision": "4c7eb6d6ee3b92ccf1a357583255897d",
+    "url": "/static/media/prakalp2k24.4c7eb6d6.jpg"
   },
   {
     "revision": "4cdb6221e6c8a22743a4c627a837f922",
@@ -344,6 +344,10 @@ self.__precacheManifest = [
     "url": "/static/media/peerpong.336a80e1.png"
   },
   {
+    "revision": "12b79eb63624ef975e7cc21554644dea",
+    "url": "/static/media/dareToRace.12b79eb6.png"
+  },
+  {
     "revision": "e283008b525ebf735db0b088497e0104",
     "url": "/static/media/sapna.e283008b.jpg"
   },
@@ -356,7 +360,7 @@ self.__precacheManifest = [
     "url": "/static/media/swapnali.9df22b64.jpg"
   },
   {
-    "revision": "6c80ac6966790f32fc0daff612923c00",
+    "revision": "7adf9187393a99a337142987a11097bc",
     "url": "/index.html"
   }
 ];

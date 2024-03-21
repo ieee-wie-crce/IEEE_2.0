@@ -57,6 +57,7 @@ import national_education_day from "../assets/events/national_education_day.png"
 import techVista from "../assets/events/techVista.png";
 import peerPong from "../assets/events/peerpong.png";
 import dareToRace from "../assets/events/dareToRace.png";
+import prakalp2 from "../assets/events/prakalp2k24.jpg";
 //Mentors
 import sapna from "../assets/TeamMembers/Mentors/sapna.jpg";
 import sushma from "../assets/TeamMembers/Mentors/sushma.jpg";
@@ -363,12 +364,18 @@ const MEMBERS = [
 
 const EVENTS = [
   {
+    title: "Prakalp 2k24",
+    imgsrc: prakalp2,
+    description:
+      '"PRAKALP 2k24" is a national-level project competition organized by IEEE and WIE of Fr. Conceicao Rodrigues College of Engineering, Mumbai. It serves as a platform for students to showcase their engineering projects across hardware and software categories.',
+    keyword: "ieee,wie",
+  },
+  {
     title: "Dare To Race",
     imgsrc: dareToRace,
     description:
       "Gear up your creativity and ignite your passion for speed at CRESCENDO 2024's 'Dare to Race' - where engineering prowess meets the thrill of the track!",
     keyword: "ieee",
-
   },
   {
     title: "Peer Pong",
@@ -384,7 +391,7 @@ const EVENTS = [
       "Tech-Vista 2024: Elevate your tech journey with Placement Talks by Vivek Gupta, ICPC World Finalist, and an exhilarating Data Structure and Algorithm contest!",
     keyword: "ieee",
   },
- 
+
   {
     title: "National Education Day 2023",
     imgsrc: national_education_day,
