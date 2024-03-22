@@ -49,7 +49,7 @@ function App() {
         {!showCard && (
           <HoverCard
             eventImg={prakalp2}
-            registrationLink={null}
+            registrationLink={"https://shorturl.at/kHV09"}
           />
         )}
       </Router>
