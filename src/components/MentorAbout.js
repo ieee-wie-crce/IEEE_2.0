@@ -1,15 +1,16 @@
 import React from "react";
 import "../css/MentorAbout.css";
 import Mentor from "./Mentor";
-import { Icon } from "@iconify/react";
 import mentorPlaceholder from "../assets/placeholders/mentorPlaceholder.png";
 import { MENTORS } from "./ImportData";
+import LordIcon from "./LordIcon";
 function MentorAbout() {
   return (
     <>
       <div className="mentorAbout">
-        <header>
-          <Icon icon="fluent-mdl2:party-leader" /> OUR MENTORS
+        <header className="makeitcenter">
+          <LordIcon icon={"kthelypq"} w={50} h={50} />
+          &nbsp;OUR MENTORS
         </header>
         <div className="border mb-4" />
         <div className="mentorContainer pb-5">

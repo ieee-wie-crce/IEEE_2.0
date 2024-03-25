@@ -6,6 +6,7 @@ import ieeeIcon from "../assets/logos/ieeeIcon.svg";
 import wieIcon from "../assets/logos/wieIcon.svg";
 import { MEMBERS } from "./ImportData";
 import memberPlaceholderImg from "../assets/placeholders/memberPlaceholder.png";
+import LordIcon from "./LordIcon";
 import "../css/Team.css";
 const TeamMember = React.lazy(() => import("./TeamMember"));
 function Team() {
@@ -40,8 +41,9 @@ function Team() {
     <>
       <div className="team">
         {/* Display the main title */}
-        <div className="mainTitle">
-          <Icon icon="fluent:people-team-48-filled" /> OUR TEAM
+        <div className="mainTitle makeitcenter">
+          <LordIcon icon={"vyqvtrtg"} w={50} h={50} />
+          &nbsp;OUR TEAM
         </div>
         <hr className="mx-5 " />
         {/* Display the team tab buttons */}

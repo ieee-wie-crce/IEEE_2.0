@@ -4,6 +4,8 @@ import { Icon } from "@iconify/react";
 import Tilt from "react-parallax-tilt";
 import eventPlaceholder from "../assets/placeholders/prakalp_placeholder.png";
 import { EVENTS, EVENTTABS as tabs } from "./ImportData";
+import bannerImg from "../assets/events/prakalpBanner.jpg";
+import LordIcon from "./LordIcon";
 import "../css/Events.css";
 
 function Events() {
@@ -12,7 +14,7 @@ function Events() {
   const [eventImgLoaded, setEventImgLoaded] = useState(false);
 
   // Set the document title
-  document.title = cardCondition.toString().toUpperCase() + " - EVENTS";
+  document.title = cardCondition.toString().toUpperCase() + " EVENTS";
 
   // Function to handle menu item clicks and update card condition
   useEffect(() => {
@@ -43,12 +45,29 @@ function Events() {
   // console.table(filteredData);
   return (
     <div className="events">
-      {/* Event title and navigation */}
-      <div className="eventTitle">
-        <Icon icon="tabler:timeline-event" /> {document.title}
+      {/* Event title */}
+      <div className="eventTitle makeitcenter">
+        <LordIcon icon={"abfverha"} w={50} h={50}/>&nbsp;{document.title}
       </div>
       <hr className="mx-5" />
-
+      {/* Banner Here */}
+      <div
+        className="bannerImg px-4 d-flex justify-content-center"
+        title="Register Now!"
+      >
+        <a
+          href="https://shorturl.at/kHV09"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={bannerImg}
+            alt="Prakalp 2k24"
+            className="img-fluid rounded-4"
+          />
+        </a>
+      </div>
+      {/* Mapping the Tabs */}
       <div className="navigation d-flex justify-content-center container">
         {tabs.map((tab, index) => (
           <Link

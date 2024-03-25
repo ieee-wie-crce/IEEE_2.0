@@ -19,12 +19,13 @@ function Navbar() {
   const MemoNavLink = React.memo(({ to, icon, text, onClick }) => {
     return (
       <NavLink
-        className="navLink text-white d-flex align-content-center"
+        className="navLink text-white d-flex justify-content-center align-content-center"
         to={to}
         onClick={onClick}
       >
-        <LordIcon icon={icon} w={25} h={25} />
-        &nbsp;
+        <div className="mx-2">
+          <LordIcon icon={icon} />
+        </div>
         {text}
       </NavLink>
     );
@@ -66,7 +67,11 @@ function Navbar() {
             type="button"
           >
             <span>
-              <Icon icon="line-md:menu" />
+              <LordIcon
+                icon={"xynjytfp"}
+                colors={"primary:#ffffff,secondary:#ffffff"}
+                state={"morph-code"}
+              />
             </span>
           </button>
         </div>
@@ -86,5 +91,4 @@ function Navbar() {
     </>
   );
 }
-
 export default Navbar;

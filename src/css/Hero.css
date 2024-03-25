@@ -14,6 +14,8 @@
   justify-content: center;
   align-items: center;
   transition: all 1s;
+  background: url("../assets/PrakalpBG.png") center/cover no-repeat;
+  background-position: left;
 }
 
 .videoBg {
@@ -45,30 +47,36 @@ video {
 }
 
 .mainHeading {
-  font-size: 150px;
-  text-shadow: 2px 2px 4px #000000;
+  font-size: 4rem;
 }
 
 .mainHeading ~ p {
-  font-size: 40px;
-  text-shadow: 2px 2px 4px #000000;
+  font-size: 2rem;
 }
-
+.mainHeading,
+.mainHeading ~ p {
+  text-shadow: 0 0 10px #ffffff9e, 0 0 20px #36175d, 0 0 30px #fff,
+    0 0 40px #60509d, 0 0 70px #28125f, 0 0 80px #ff0000, 0 0 100px #821c65,
+    0 0 150px #b5677f;
+}
 .reveal-text {
   color: #fff;
   opacity: 0;
   transform: translateY(50px);
   animation: revealAnimation 3s forwards;
 }
-
-@media only screen and (max-width: 768px) {
-  * {
-    scroll-snap-type: none;
-  }
+/* For Desktops */
+@media only screen and (min-width: 768px) {
   .mainHeading {
-    font-size: 4rem;
+    font-size: 150px;
   }
-  .mainHeading > p {
-    font-size: 2rem;
+  
+  .mainHeading ~ p {
+    font-size: 40px;
   }
+}
+
+/* FOR Tablets */
+@media only screen and (max-width: 768px) and (min-width: 641px) {
+
 }

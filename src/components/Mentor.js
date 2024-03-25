@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
+import LordIcon from "./LordIcon";
 function Mentor({ mentor, index, mentorPlaceholder }) {
   const [imgLoaded, setImgLoaded] = useState(false);
   return (
@@ -16,7 +17,11 @@ function Mentor({ mentor, index, mentorPlaceholder }) {
         className="mentorImg rounded w-100 mb-2"
       />
       <div className="mentorMeta w-100 rounded">
-        <div className="mentorName">{mentor.name}</div>
+        <div className="mentorName makeitcenter">
+          <LordIcon icon={"hrjifpbq"} />
+          &nbsp;
+          {mentor.name}
+        </div>
         <div className="mentorDesc">{mentor.description}</div>
       </div>
       <img

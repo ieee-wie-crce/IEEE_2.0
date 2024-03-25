@@ -5,7 +5,7 @@ import bulbIcon from "../assets/icons/bulb.png";
 import missionIcon from "../assets/icons/mission.png";
 import Card from "./Card";
 import MentorAbout from "./MentorAbout";
-import { Icon } from "@iconify/react";
+import LordIcon from "./LordIcon";
 // Static data that doesn't change during component re-renders
 const description = [
   "The Fr.CRCE Student Branch of IEEE was established in 1995 with the initiative of our Vice-Principal Prof. B. R. Prabhu.",
@@ -46,8 +46,8 @@ const About = () => {
     <>
       <div className="about snapElement" id="about">
         <div className="title">
-          <header className="d-flex justify-content-center align-items-center">
-            <Icon icon="material-symbols:info-outline" />
+          <header className="makeitcenter">
+            <LordIcon icon={"yxczfiyc"} w={50} h={50} />
             &nbsp;About Us
           </header>
           <hr className="text-white h-100" />

@@ -2,6 +2,7 @@ import React, { useRef, useState, useCallback, memo } from "react";
 import "../css/Contact.css";
 import emailjs from "@emailjs/browser";
 import { Icon } from "@iconify/react";
+import LordIcon from "./LordIcon";
 const Contact = () => {
   const form = useRef();
 
@@ -61,7 +62,7 @@ const Contact = () => {
       <div className="contact-page">
         <div className="title">
           <header className="d-flex justify-content-center align-items-center">
-            <Icon icon="bitcoin-icons:node-2-connections-outline" />
+            <LordIcon icon={"rsvfayfn"} w={50} h={50} />
             &nbsp;Contact
           </header>
           <hr className="text-white h-100" />
@@ -81,17 +82,31 @@ const Contact = () => {
             {/* contact_details */}
             <ContactDetails />
           </div>
-          <div className="collegeLocation p-3">
-            <iframe
-              title="College Location"
-              src="https://shorturl.at/moGH4"
-              allowFullScreen={true}
-              height={450}
-              loading="lazy"
-              style={{ border: 0 }}
-              referrerPolicy="no-referrer-when-downgrade"
-              className="rounded-3"
-            />
+          <div className="location py-4 px-lg-4 makeitcenter flex-column">
+            <h3 className="makeitcenter">
+              <LordIcon
+                icon={"surcxhka"}
+                state={"hover-jump-roll"}
+                colors={"primary:#000000,secondary:#000000"}
+                w={30}
+                h={30}
+                stroke={"bold"}
+              />
+              &nbsp;Locate Us
+            </h3>
+            <hr />
+            <div className="collegeLocation">
+              <iframe
+                title="College Location"
+                src="https://shorturl.at/moGH4"
+                allowFullScreen={true}
+                height={450}
+                loading="lazy"
+                style={{ border: 0 }}
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-3"
+              />
+            </div>
           </div>
         </div>
         <hr />
@@ -116,8 +131,9 @@ function ContactDetails() {
         width: "90%",
       }}
     >
-      <h3>
-        <Icon icon="tabler:message-bolt" /> Contact Details
+      <h3 className="makeitcenter">
+        <LordIcon icon={"fdxqrdfe"} colors={"#000000"} w={30} h={30} />
+        &nbsp;Contact Details
       </h3>
       <hr />
       <p>
@@ -175,8 +191,9 @@ function Form({ form, handleSubmit, changeHandler, formValue }) {
           onChange={changeHandler}
           required
         />
-        <label htmlFor="from_name">
-          <Icon icon="gg:rename" /> Name
+        <label htmlFor="from_name" className="makeitcenter">
+          <LordIcon icon={"fdxqrdfe"} colors={"#000000"} />
+          &nbsp;Name
         </label>
       </div>
       <div className="form-floating mb-3">
@@ -191,8 +208,9 @@ function Form({ form, handleSubmit, changeHandler, formValue }) {
           onChange={changeHandler}
           required
         />
-        <label htmlFor="from_email">
-          <Icon icon="line-md:email-twotone" /> Email address
+        <label htmlFor="from_email" className="makeitcenter">
+          <LordIcon icon={"nzixoeyk"} colors={"#000000"} />
+          &nbsp;Email address
         </label>
       </div>
       <div className="form-floating">
@@ -208,12 +226,14 @@ function Form({ form, handleSubmit, changeHandler, formValue }) {
           onChange={changeHandler}
           required
         />
-        <label htmlFor="message">
-          <Icon icon="tabler:message-bolt" /> Message
+        <label htmlFor="message" className="makeitcenter">
+          <LordIcon icon={"xtnsvhie"} colors={"#000000"} />
+          &nbsp;Message
         </label>
       </div>
-      <button type="submit" className="btn btn-primary w-100 mt-4">
-        Send <Icon icon="cil:send" />
+      <button type="submit" className="btn btn-primary w-100 mt-4 makeitcenter">
+        Send&nbsp;
+        <LordIcon icon={"aycieyht"} stroke={"bold"} w={30} h={30} />
       </button>
     </form>
   );

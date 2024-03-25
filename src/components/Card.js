@@ -7,7 +7,7 @@ function Card(props) {
     <>
       <Tilt tiltReverse={true} scale={1.2}>
         <div className="card text-white mx-0">
-          <div className="icon d-flex flex-column justify-content-center align-items-center">
+          <div className="icon flex-column makeitcenter">
             <img
               src={props.icon}
               width={200}
