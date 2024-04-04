@@ -72,6 +72,7 @@ function Team() {
               member={member}
               Tilt={Tilt}
               Icon={Icon}
+              LordIcon={LordIcon}
               index={index}
               imageLoaded={imageLoaded}
               placeholderImg={memberPlaceholderImg}

@@ -81,9 +81,6 @@
   align-items: center;
   transition: 0.5s ease;
 }
-.imgDiv > img:hover {
-  scale: 1.1;
-}
 .socialIcons {
   width: 100%;
   display: flex;

@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Icon } from "@iconify/react";
 import ieeeLogo from "../assets/logos/ieee-wie-logo.png";
 import "../css/Navbar.css";
 import LordIcon from "./LordIcon";

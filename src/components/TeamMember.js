@@ -4,6 +4,7 @@ export default function TeamMember(props) {
     member,
     Tilt,
     Icon,
+    LordIcon,
     index,
     imageLoaded,
     placeholderImg,
@@ -43,8 +44,14 @@ export default function TeamMember(props) {
                   <Icon icon="bi:instagram" />
                 </a>
               )}
-              <div className="showSocialLinksBtn">
-                <Icon icon="tabler:social" />
+              <div className="showSocialLinksBtn makeitcenter">
+                <LordIcon
+                  icon={"jjoolpwc"}
+                  stroke={"bold"}
+                  colors={"primary:#121331,secondary:#545454"}
+                  w={40}
+                  h={40}
+                />
               </div>
               {member.linkedin && (
                 <a
