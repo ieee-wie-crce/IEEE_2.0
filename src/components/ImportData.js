@@ -369,7 +369,7 @@ const EVENTS = [
     description:
       '"PRAKALP 2k24" is a national-level project competition serving as a platform for students to showcase their engineering projects across hardware and software categories.',
     keyword: "ieee,wie",
-    ongoingLink: "https://shorturl.at/kHV09",
+    // ongoingLink: "https://shorturl.at/kHV09",
   },
   {
     title: "Dare To Race",

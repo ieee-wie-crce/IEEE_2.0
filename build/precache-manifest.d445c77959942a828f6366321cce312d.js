@@ -4,24 +4,24 @@ self.__precacheManifest = [
     "url": "/static/js/0.95488ee0.chunk.js"
   },
   {
-    "revision": "acafef2b9fad49beef00",
-    "url": "/static/js/1.2c6a35e2.chunk.js"
+    "revision": "b30759673d4a1c48bc80",
+    "url": "/static/js/1.3c9d02ee.chunk.js"
   },
   {
-    "revision": "f3c9ca282881c890ab8b",
+    "revision": "b39c44321e989a6c92df",
     "url": "/static/css/main.a0d8f742.chunk.css"
   },
   {
-    "revision": "f3c9ca282881c890ab8b",
-    "url": "/static/js/main.801f93fe.chunk.js"
+    "revision": "b39c44321e989a6c92df",
+    "url": "/static/js/main.ca75d92f.chunk.js"
   },
   {
-    "revision": "56e354a50a8d0a1e6e75",
-    "url": "/static/js/runtime~main.034f4034.js"
+    "revision": "1dbf56b29ed9030f39a5",
+    "url": "/static/js/runtime~main.17e1d249.js"
   },
   {
-    "revision": "399d110217cd799cf3ab",
-    "url": "/static/js/4.6c1227b8.chunk.js"
+    "revision": "a8189ae5aded182223b7",
+    "url": "/static/js/4.40fa4d4b.chunk.js"
   },
   {
     "revision": "6d7371a00651f622edb3",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/static/js/6.f8eb389e.chunk.js"
   },
   {
-    "revision": "eb2a7245556356cd5496",
+    "revision": "311b16a01c7cc0f3ad78",
     "url": "/static/css/7.4739174e.chunk.css"
   },
   {
-    "revision": "eb2a7245556356cd5496",
-    "url": "/static/js/7.bb1600dc.chunk.js"
+    "revision": "311b16a01c7cc0f3ad78",
+    "url": "/static/js/7.22916373.chunk.js"
   },
   {
     "revision": "34596fd156ca3f1778d9",
@@ -368,7 +368,7 @@ self.__precacheManifest = [
     "url": "/static/media/prakalpBanner.76822d2d.jpg"
   },
   {
-    "revision": "0bbebbab34f04704f558d26b793a382a",
+    "revision": "37dff24017793c1033f26704a717a945",
     "url": "/index.html"
   }
 ];

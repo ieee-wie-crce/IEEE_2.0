@@ -46,12 +46,12 @@ function App() {
             <Route path="*" element={<Error />} />
           </Routes>
         </Suspense>
-        {!showCard && (
+        {/* {!showCard && (
           <HoverCard
             eventImg={prakalp2}
             registrationLink={"https://shorturl.at/kHV09"}
           />
-        )}
+        )} */}
       </Router>
     </>
   );

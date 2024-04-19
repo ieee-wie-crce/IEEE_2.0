@@ -51,7 +51,7 @@ function Events() {
       </div>
       <hr className="mx-5" />
       {/* Banner Here */}
-      <div
+      {/* <div
         className="bannerImg px-4 d-flex justify-content-center"
         title="Register Now!"
       >
@@ -66,7 +66,7 @@ function Events() {
             className="img-fluid rounded-4"
           />
         </a>
-      </div>
+      </div> */}
       {/* Mapping the Tabs */}
       <div className="navigation d-flex justify-content-center container">
         {tabs.map((tab, index) => (
