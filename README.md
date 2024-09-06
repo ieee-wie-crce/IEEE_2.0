@@ -28,7 +28,7 @@ We welcome contributions from the community! If you have ideas, suggestions, or 
 
 ---
 
-Visit our website: [https://ieeewiecrce.netlify.com](https://ieeewiecrce.netlify.com)
+Visit our website: [https://ieeewiecrce.netlify.app](https://ieeewiecrce.netlify.app)
 Follow us on [Instagram](https://www.instagram.com/ieee_crce) | [Facebook](https://www.facebook.com/IeeeCrce) | [Twitter](https://twitter.com/IEEE_CRCE)
 
 For inquiries, contact us at: [ieeecrce.24@gmail.com](mailto:ieeecrce.24@gmail.com)
