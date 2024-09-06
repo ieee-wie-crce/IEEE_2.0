@@ -20,7 +20,7 @@ WIE is a global network of IEEE members and volunteers dedicated to promoting wo
 
 ## Getting Started 🏁🌐
 
-To access and explore our website, simply visit https://ieeewiecrce.netlify.com in your web browser. You can navigate through different sections to learn more about IEEE, WIE, and the exciting activities we have to offer.
+To access and explore our website, simply visit https://ieeewiecrce.netlify.app in your web browser. You can navigate through different sections to learn more about IEEE, WIE, and the exciting activities we have to offer.
 
 ## Contributing 🤝🌟
 
